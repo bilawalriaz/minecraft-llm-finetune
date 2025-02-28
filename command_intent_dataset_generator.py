@@ -12,17 +12,25 @@ LLM_API = "http://localhost:11434/api/generate"
 LLM_MODEL = "llama3.2"  # Update this with your preferred model
 
 # Constants
-OUTPUT_FILE = "minecraft_command_intent_dataset.json"
-JSONL_OUTPUT_FILE = "minecraft_command_intent_dataset.jsonl"
+OUTPUT_DIR = "training_data"
+OUTPUT_FILE = os.path.join(OUTPUT_DIR, "minecraft_command_intent_dataset.json")
+JSONL_OUTPUT_FILE = os.path.join(OUTPUT_DIR, "minecraft_command_intent_dataset.jsonl")
 BOT_COMMANDS_FILE = "bot-commands-summary.md"
-BOT_PROFILE_FILE = "minecraft-finetune-bot-framework/profiles/andy_npc.json"
+BOT_PROFILE_FILE = "minecraft-finetune-bot-framework/profiles/defaults/_default.json"
+
+# Configuration for commands to ignore
+# Same as COMMAND_CATEGORIES but normal capitalised words - TODO fix
+IGNORE_COMMANDS = {
+    "Action Commands": ["newAction", "stop", "stfu", "restart", "clearChat"],
+    "Movement Commands": ["goToPlayer", "followPlayer", "goToCoordinates", "searchForBlock", "searchForEntity", "moveAway"]
+}
 
 # Command categories from the command summary
 COMMAND_CATEGORIES = {
     "action_commands": ["newAction", "stop", "stfu", "restart", "clearChat"],
     "movement_commands": ["goToPlayer", "followPlayer", "goToCoordinates", "searchForBlock", 
                          "searchForEntity", "moveAway", "stay"],
-    "memory_locations": ["rememberHere", "goToRememberedPlace"],
+    "memory_locations": ["stay", "rememberHere", "goToRememberedPlace"],
     "inventory_management": ["givePlayer", "consume", "equip", "discard"],
     "chest_interactions": ["putInChest", "takeFromChest", "viewChest"],
     "crafting_smelting": ["collectBlocks", "craftRecipe", "smeltItem", "clearFurnace"],
@@ -42,6 +50,9 @@ def llm_generate(prompt, model=LLM_MODEL, temp=0.7, max_tokens=2048):
                 "prompt": prompt,
                 "temperature": temp,
                 "max_tokens": max_tokens,
+                "options": {
+                    "num_ctx": 50000  # Set the context window size
+                },
                 "stream": True  # Enable streaming to read line by line
             },
             stream=True,  # Enable HTTP streaming
@@ -267,89 +278,60 @@ def identify_command_in_response(response, cmd_name):
         return match.group(0)
     return None
 
-def generate_examples_for_commands(commands, examples_from_profile):
-    """Generate examples for each command individually"""
-    print("Generating command examples...")
+def save_single_sample(sample, json_file, jsonl_file):
+    """Save a single sample to both JSON and JSONL formats immediately"""
+    # Make sure the output directory exists
+    os.makedirs(os.path.dirname(json_file), exist_ok=True)
     
-    all_conversations = []
+    print(f"DEBUG: Saving to JSON file: {json_file}")
+    print(f"DEBUG: Saving to JSONL file: {jsonl_file}")
     
-    # Get a flattened list of all commands
-    all_command_names = []
-    for cmd_list in COMMAND_CATEGORIES.values():
-        all_command_names.extend(cmd_list)
-    
-    # Generate examples for each command
-    for cmd_name in tqdm(all_command_names):
-        if cmd_name not in commands:
-            continue
-            
-        cmd_info = commands[cmd_name]
+    # For JSONL, we can directly append
+    with open(jsonl_file, 'a', encoding='utf-8') as f:
+        # Create a copy of the sample to modify for JSONL format
+        jsonl_sample = sample.copy()
         
-        # Get existing examples for this command
-        cmd_examples = [ex for ex in examples_from_profile if ex.get("command") == cmd_name]
+        # If there's a thinking key, incorporate it into the output for JSONL format
+        if "thinking" in jsonl_sample:
+            thinking = jsonl_sample.pop("thinking")
+            # Check if we're dealing with a raw conversation or a formatted sample
+            if "bot" in jsonl_sample:
+                jsonl_sample["bot"] = f"<thinking>\n{thinking}\n</thinking>\n\n{jsonl_sample['bot']}"
+            elif "output" in jsonl_sample:
+                jsonl_sample["output"] = f"<thinking>\n{thinking}\n</thinking>\n\n{jsonl_sample['output']}"
         
-        # Find which category this command belongs to
-        category = None
-        for cat, cmds in COMMAND_CATEGORIES.items():
-            if cmd_name in cmds:
-                category = cat
-                break
-        
-        cmd_conversations = []  # Keep track of conversations for this command
-        
-        # Generate 3 examples per command
-        for i in range(3):
-            print(f"Generating example {i+1} for {cmd_name}...")
-            
-            # Create the prompt
-            prompt = generate_command_intent_prompt("andy", cmd_name, cmd_info, cmd_examples)
-            
-            # Generate the conversation
-            response = llm_generate(prompt, temp=0.75, max_tokens=1024)
-            
-            if response:
-                # Parse the conversation
-                conversation = parse_generated_conversation(response)
-                
-                if conversation:
-                    # Verify the command is in the response
-                    cmd_text = identify_command_in_response(conversation["bot"], cmd_name)
-                    
-                    if cmd_text:
-                        conversation["command"] = cmd_name
-                        conversation["command_text"] = cmd_text
-                        conversation["category"] = category
-                        cmd_conversations.append(conversation)
-                        all_conversations.append(conversation)
-                        print(f"Generated valid example for {cmd_name}")
-                    else:
-                        print(f"Command {cmd_name} not found in response, skipping")
-                else:
-                    print(f"Could not parse conversation for {cmd_name}")
-            else:
-                print(f"No response generated for {cmd_name}")
-        
-        # Save the examples for this command incrementally
-        if cmd_conversations:
-            # Format samples for this command
-            cmd_samples = format_as_training_samples(cmd_conversations)
-            
-            # Save incrementally
-            save_samples_incrementally(cmd_samples, JSONL_OUTPUT_FILE)
-            
-            # Also update the JSON file with all examples so far
-            with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
-                all_samples = format_as_training_samples(all_conversations)
-                json.dump(all_samples, f, indent=2)
-            
-            print(f"Saved {len(cmd_samples)} samples for command {cmd_name}")
+        f.write(json.dumps(jsonl_sample) + '\n')
     
-    print(f"Generated {len(all_conversations)} valid command conversations")
-    
-    # Save the final dataset with proper JSONL format
-    save_to_jsonl(all_conversations, JSONL_OUTPUT_FILE)
-    
-    return all_conversations
+    # For JSON, we need to load, append, and save
+    try:
+        # Read the current JSON file
+        with open(json_file, 'r', encoding='utf-8') as f:
+            try:
+                data = json.load(f)
+                print(f"DEBUG: Loaded {len(data)} existing samples from JSON file")
+            except json.JSONDecodeError:
+                # If the file is empty or invalid, start with an empty list
+                data = []
+                print(f"DEBUG: JSON file was empty or invalid, starting with empty list")
+        
+        # Append the new sample
+        data.append(sample)
+        
+        # Write back to the file
+        with open(json_file, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2)
+        
+        print(f"DEBUG: Saved new sample to {json_file} and {jsonl_file}")
+        print(f"DEBUG: JSON file now has {len(data)} samples")
+        
+        # Verify the file was updated
+        if os.path.exists(json_file):
+            print(f"DEBUG: JSON file exists and is {os.path.getsize(json_file)} bytes")
+        else:
+            print(f"DEBUG: JSON file does not exist after save!")
+            
+    except Exception as e:
+        print(f"ERROR updating JSON file: {e}")
 
 def format_as_training_samples(conversations):
     """Format conversations as training samples with thinking steps as a separate key"""
@@ -372,44 +354,92 @@ def format_as_training_samples(conversations):
     
     return samples
 
-def save_samples(samples, json_file, jsonl_file):
-    """Save samples to both JSON and JSONL formats"""
-    # Also save incrementally as we go
-    with open(json_file, 'w', encoding='utf-8') as f:
-        json.dump(samples, f, indent=2)
+def generate_examples_for_command(bot_name, cmd_name, cmd_info, examples_from_profile, max_examples=20, 
+                                  json_file=None, jsonl_file=None, existing_inputs=None):
+    """Generate examples for a single command"""
+    print(f"Generating examples for {cmd_name}...")
     
-    with open(jsonl_file, 'w', encoding='utf-8') as f:
-        for sample in samples:
-            f.write(json.dumps(sample) + '\n')
+    # Get existing examples for this command
+    cmd_examples = [ex for ex in examples_from_profile if ex.get("command") == cmd_name]
     
-    print(f"Saved {len(samples)} samples to {json_file} and {jsonl_file}")
-
-def save_samples_incrementally(samples, jsonl_file, append=True):
-    """Save samples incrementally to a JSONL file"""
-    mode = 'a' if append else 'w'
-    with open(jsonl_file, mode, encoding='utf-8') as f:
-        for sample in samples:
-            f.write(json.dumps(sample) + '\n')
+    # Find which category this command belongs to
+    category = None
+    for cat, cmds in COMMAND_CATEGORIES.items():
+        if cmd_name in cmds:
+            category = cat
+            break
     
-    print(f"Saved {len(samples)} samples incrementally to {jsonl_file}")
-
-def save_to_jsonl(samples, filename):
-    """Save samples to a JSONL file"""
-    with open(filename, 'w', encoding='utf-8') as f:
-        for sample in samples:
-            # Create a copy of the sample to modify for JSONL format
-            jsonl_sample = sample.copy()
+    cmd_conversations = []  # Keep track of conversations for this command
+    total_saved = 0
+    
+    # Generate examples for this command
+    for i in range(max_examples):
+        print(f"  Generating example {i+1} of {max_examples}...")
+        
+        # Create the prompt
+        prompt = generate_command_intent_prompt(bot_name, cmd_name, cmd_info, cmd_examples)
+        
+        # Generate the conversation
+        response = llm_generate(prompt, temp=0.75, max_tokens=1024)
+        
+        if response:
+            # Parse the conversation
+            conversation = parse_generated_conversation(response)
             
-            # If there's a thinking key, incorporate it into the output for JSONL format
-            if "thinking" in jsonl_sample:
-                thinking = jsonl_sample.pop("thinking")
-                jsonl_sample["output"] = f"<thinking>\n{thinking}\n</thinking>\n\n{jsonl_sample['output']}"
-            
-            f.write(json.dumps(jsonl_sample) + '\n')
+            if conversation:
+                # Verify the command is in the response
+                cmd_text = identify_command_in_response(conversation["bot"], cmd_name)
+                
+                if cmd_text:
+                    conversation["command"] = cmd_name
+                    conversation["command_text"] = cmd_text
+                    conversation["category"] = category
+                    cmd_conversations.append(conversation)
+                    
+                    # Format and save this example immediately if requested
+                    if json_file and jsonl_file and existing_inputs is not None:
+                        # Format as training sample
+                        sample = {
+                            "instruction": conversation["user"],
+                            "input": "",
+                            "output": conversation["bot"],
+                            "thinking": conversation["thinking"],
+                            "conversation_type": category or "general_conversation",
+                            "command_used": cmd_name
+                        }
+                        
+                        sample_input = sample.get("instruction", "")
+                        print(f"DEBUG: Generated sample with instruction: {sample_input[:50]}...")
+                        
+                        if sample_input not in existing_inputs:
+                            # Save immediately
+                            save_single_sample(sample, json_file, jsonl_file)
+                            existing_inputs.add(sample_input)
+                            total_saved += 1
+                            print(f"  Saved new example #{total_saved} for {cmd_name}")
+                        else:
+                            print(f"  Duplicate sample found, skipping")
+                    
+                    print(f"  Generated valid example for {cmd_name}")
+                else:
+                    print(f"  Command {cmd_name} not found in response, skipping")
+            else:
+                print(f"  Could not parse conversation for {cmd_name}")
+        else:
+            print(f"  No response generated for {cmd_name}")
+    
+    return cmd_conversations, total_saved
 
 def main():
     """Main function to generate the dataset"""
     print("Generating command intent dataset...")
+    
+    # Make sure the output directory exists
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    
+    print(f"DEBUG: Output directory: {OUTPUT_DIR}")
+    print(f"DEBUG: JSON output file: {OUTPUT_FILE}")
+    print(f"DEBUG: JSONL output file: {JSONL_OUTPUT_FILE}")
     
     # Load commands
     print("Loading bot commands...")
@@ -419,25 +449,70 @@ def main():
     print("Loading bot profile...")
     profile_data = load_bot_profile()
     
-    # Extract examples from profile
+    # Load existing dataset from JSON if it exists
+    existing_samples = []
+    existing_inputs = set()
+    
+    if os.path.exists(OUTPUT_FILE):
+        print(f"Loading existing dataset from {OUTPUT_FILE}...")
+        try:
+            with open(OUTPUT_FILE, 'r', encoding='utf-8') as f:
+                existing_samples = json.load(f)
+            print(f"Loaded {len(existing_samples)} existing samples from JSON.")
+            
+            # Create a set of existing inputs to check for duplicates
+            for sample in existing_samples:
+                existing_inputs.add(sample.get("input", ""))
+                
+        except json.JSONDecodeError:
+            print(f"Error loading {OUTPUT_FILE}, starting with empty dataset.")
+    else:
+        print(f"DEBUG: Output file {OUTPUT_FILE} does not exist yet.")
+    
+    # Extract command examples from profile
     print("Extracting command examples from profile...")
     examples_from_profile = extract_command_examples_from_profile(profile_data["conversation_examples"])
     
+    # Make sure the output files exist and are properly initialized
+    if not os.path.exists(OUTPUT_FILE):
+        print(f"DEBUG: Creating empty JSON file at {OUTPUT_FILE}")
+        with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
+            json.dump([], f)
+    
+    if not os.path.exists(JSONL_OUTPUT_FILE):
+        print(f"DEBUG: Creating empty JSONL file at {JSONL_OUTPUT_FILE}")
+        open(JSONL_OUTPUT_FILE, 'w').close()
+    
     # Generate examples for each command
-    conversations = generate_examples_for_commands(commands, examples_from_profile)
+    print("Generating examples for commands...")
+    total_new_samples = 0
     
-    # Format as training samples
-    samples = format_as_training_samples(conversations)
+    # Process each command
+    for cmd_name, cmd_info in commands.items():
+        print(f"Processing command: {cmd_name}")
+        print(cmd_info)
+        print(IGNORE_COMMANDS.get(cmd_info["category"], []))
+        if cmd_name in IGNORE_COMMANDS.get(cmd_info["category"], []):
+            print(f"Skipping command {cmd_name} as it is in the ignore list")
+            continue
+        
+        # Generate conversations for this command and save them immediately
+        _, cmd_saved = generate_examples_for_command(
+            profile_data["name"], 
+            cmd_name, 
+            cmd_info, 
+            examples_from_profile,
+            json_file=OUTPUT_FILE,
+            jsonl_file=JSONL_OUTPUT_FILE,
+            existing_inputs=existing_inputs
+        )
+        
+        total_new_samples += cmd_saved
+        print(f"Saved {cmd_saved} new samples for {cmd_name}")
+        print(f"Total new samples so far: {total_new_samples}")
     
-    # Save the dataset
-    with open("minecraft_command_intent_dataset.json", 'w', encoding='utf-8') as f:
-        json.dump(samples, f, indent=2)
-    
-    # Save as JSONL
-    save_to_jsonl(samples, "minecraft_command_intent_dataset.jsonl")
-    
-    print(f"Generated {len(samples)} samples for {len(commands)} commands")
-    print("Dataset saved to minecraft_command_intent_dataset.json and minecraft_command_intent_dataset.jsonl")
+    print(f"Generated {total_new_samples} new unique samples")
+    print(f"Total dataset size: {len(existing_inputs)} samples")
 
 if __name__ == "__main__":
     main()

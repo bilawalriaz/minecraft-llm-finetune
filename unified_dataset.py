@@ -313,7 +313,7 @@ def create_unified_dataset(num_examples=200, include_thinking_ratio=0.3, model="
     
     # Load existing dataset if available
     existing_data = []
-    dataset_path = "unified_minecraft_dataset.json"
+    dataset_path = "training_data/unified_minecraft_dataset.json"
     
     if os.path.exists(dataset_path):
         try:
