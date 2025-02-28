@@ -1,0 +1,1183 @@
+[
+  {
+    "instruction": "What's up with taming a shulker? I've been trying to tame one for ages, but they just won't stop attacking me.",
+    "input": "",
+    "output": "tbh, shulkers are notoriously hard to tame.imo, your best bet is to find one in an abandoned mine shaft or on the Overworld surface at night. They'll probably attack you if you try to interact with them, so use a diamond sword and just try to knock 'em out without harming yourself. once they're stunned, quickly put 'em in a cage or a container, and then you can start taming 'em using golden apples. good luck!",
+    "source": "minecraft_wiki_Items_Light Blue Dye",
+    "conversation_type": "mob_knowledge"
+  },
+  {
+    "instruction": "How do I craft a crafting table?",
+    "input": "",
+    "output": "To craft a crafting table, you'll need 3 wood logs (any type will do) and place them in a 2x2 crafting grid. That's it! If you want to repair damaged tools instead of making a new one, combine two damaged items of the same material side-by-side in the crafting grid; just be aware that this method won't restore any enchantments.",
+    "source": "minecraft_wiki_Crafting_Crafting Table",
+    "conversation_type": "crafting_and_recipes"
+  },
+  {
+    "instruction": "What's a good way to optimize my recipe book for farming efficiency, especially when it comes to farming specific resources like obsidian or diamonds?",
+    "input": "",
+    "output": "For optimal recipe book optimization in farming, focus on simplifying your initial crafting patterns and balancing your inventory. Start with basic recipes for essential materials like coal, water, or iron ingots, then expand into more complex patterns once resources are available. Consider using the \"Show Craftable\" feature to prioritize recipes that require minimal materials. Additionally, always keep an eye on your resource storage and adjust your farming strategy accordingly. This might involve dedicating a specific section of your recipe book to frequently used materials or experimenting with different grid patterns to optimize material efficiency.",
+    "source": "minecraft_wiki_Crafting_Recipe Book",
+    "conversation_type": "gameplay_strategy",
+    "thinking": "To determine an effective strategy for optimizing the recipe book for farming efficiency, I need to consider how recipes can be tailored to make farming specific resources more convenient. One approach is to identify which crafting patterns require the fewest materials and focus on those first. For example, if a player wants to farm obsidian, they should prioritize building a furnace or blast furnace with a simple recipe that requires minimal material inputs, such as just coal and water. By optimizing these base recipes, players can quickly get started with farming and then expand into more complex crafting patterns once resources become available. I also need to consider the importance of having a balanced inventory for efficient farming. Having an adequate supply of materials, such as coal or obsidian dust, will allow farmers to work at a consistent pace without being hindered by limited resource availability."
+  },
+  {
+    "instruction": "I've been trying to find a specific biome in Minecraft, but it's not showing up on my map. How do I navigate through it?",
+    "input": "",
+    "output": "tbh, biomes can be kinda finicky. Make sure you're in Survival mode and the biome is enabled. If it's not showing up on your map, try checking the Biome list in Creative mode to see if it's a known biome. Also, check for mods that might be interfering with your vanilla game. Finally, try moving the biome to a different world or adjusting your game settings \u2013 sometimes biomes can get bugged.",
+    "source": "minecraft_wiki_Crafting_Recipe Book",
+    "conversation_type": "navigation_and_biomes"
+  },
+  {
+    "instruction": "How can I find underwater magma features and aquifers to generate water aquifers with magma blocks?",
+    "input": "",
+    "output": "AFAIK, you can find underwater magma features by exploring ocean ruins or searching in areas with high lava lake generation rates. To locate these features, look for clusters of 1-8 blocks with a height of at least one block above the water level; they'll often be surrounded by lava lakes. Once you've found one, follow the lava lakes to see if there's an aquifer nearby \u2013 that's when you can start farming those sweet magma blocks!",
+    "source": "minecraft_wiki_Blocks_Magma Block",
+    "conversation_type": "navigation_and_biomes"
+  },
+  {
+    "instruction": "Can you tell me where to find redstone dust in Minecraft?",
+    "input": "",
+    "output": "Redstone dust can be found naturally generated on some dirt, gravel, and stone blocks. You can also craft it using a crafting table and 8 coal dust. Make sure to have the correct grid pattern (3x3) for the most efficient result.",
+    "source": "minecraft_wiki_Mechanics_Redstone circuits/Piston",
+    "conversation_type": "mining_and_resources"
+  },
+  {
+    "instruction": "How do I get a crafting table from scratch? I only have sticks and dirt.",
+    "input": "",
+    "output": "You'll want to craft an axe first since it's the quickest way to mine most resources. The recipe is 3 sticks in the top row of a 2x2 crafting grid. Once you have an axe, use it to mine any material you want. \n\nNext, you'll need 8 wooden planks to craft a crafting table. You can do this by crafting 4 wooden planks using wood (4 logs in the 2x2 crafting grid) and then crafting another 4 using those planks. Now that you have 8 wooden planks, place them in the 3x3 crafting grid pattern (like a square with one log missing from each corner).\n\nWith your new crafting table active, you can now craft many more items than are available on your original inventory crafting grid and access recipes that require more complex tools.",
+    "source": "minecraft_wiki_Crafting_Crafting Table",
+    "conversation_type": "resource_chains",
+    "thinking": "To acquire a crafting table, I need to gather resources that can be crafted together. Since I have sticks and dirt, I'll start by crafting tools using these materials."
+  },
+  {
+    "instruction": "Hey bot, I'm trying to get some bread in Minecraft Dungeons. How do I even find it?",
+    "input": "",
+    "output": "TBH, if you want to get bread regularly, open those supply chests! They're usually found in treasure rooms or other loot-filled areas. Also, keep an eye out for mobs like skeletons and zombies \u2013 they'll drop bread when you kill 'em. And if you see the Food Reserves enchantment on your armor, that might give you a chance to craft some bread too.",
+    "source": "minecraft_wiki_Items_Minecraft Dungeons:Bread",
+    "conversation_type": "mining_and_resources",
+    "thinking": "The player seems to be new to Minecraft Dungeons or its mechanics. They're asking about a specific resource (bread) that can restore health. Bread is a consumable item dropped from supply chests and mobs, as well as obtained by opening chests. It's also created by the common armor enchantment Food Reserves. I should emphasize the importance of supply chests in dropping guaranteed items."
+  },
+  {
+    "instruction": "How do I craft seagrass?",
+    "input": "",
+    "output": "To craft seagrass in tall form, you'll need 1 seagrass item (obtained by harvesting with shears) and bone meal in the compost bin with at least 2 blocks of space above it. If the transformation works, a new tall seagrass block will be added to your world.",
+    "source": "minecraft_wiki_Blocks_Seagrass",
+    "conversation_type": "crafting_and_recipes",
+    "thinking": "From the article, I know that seagrass can be harvested only with shears. It also mentions that bone meal can transform a regular seagrass into tall seagrass if there's enough space. Considering this, I think I have to craft seagrass using bone meal."
+  },
+  {
+    "instruction": "I'm trying to find the Deep Dark biome and explore it, but I've been having trouble navigating. Can you give me some tips on how to get there and what I can expect when I do?",
+    "input": "",
+    "output": "To access the Deep Dark biome, activate 3 naturally generated sculk shriekers within a 24-block radius of each other. Once you've triggered this event, a warden will spawn near one of the shriekers, and you'll need to get out of its detection range quickly. You can do this by sneaking or using diversions like snowballs or arrows. The Deep Dark biome is rich in resources like sculk, dark oak trees, and experience orbs. Be cautious, as wardens can be aggressive and deal massive damage with their sonic boom attack.",
+    "source": "minecraft_wiki_Mobs_Warden",
+    "conversation_type": "navigation_and_biomes"
+  },
+  {
+    "instruction": "How do I get to the Red Glozmore boss in China Edition?",
+    "input": "",
+    "output": "TBH, it's not exactly a common spawn. Afaik, you can find it in The End, but only when the end portal is filled with redstone dust. It's a bit of a tricky setup, tbh. You'll need to fill up the portal with 12 blocks of redstone dust and then light the top block while the player is not looking. Once that's done, the Red Glozmore should spawn. Lmao, good luck with that!",
+    "source": "minecraft_wiki_Mobs_Boss (China Edition)",
+    "conversation_type": "mining_and_resources"
+  },
+  {
+    "instruction": "I'm trapped in a cave with zombies and only have 3 hearts left, what should I do?",
+    "input": "",
+    "output": "First, try to find a safe place to sit down and avoid any further zombie attacks. If you have an empty bucket of water nearby, use it to hit the zombies in front of you until the water runs out. This should give you some space to move around. Next, look for materials that can be used to craft a health-restoring potion or an apple to eat, as these will provide quick health regeneration.\n\nAlternatively, if you have a few seconds, try to find a nearby mushroom and use it to create a regeneration-boosting potion (requires 2 mushrooms, 1 water bottle, and 1 bucket of water). This can help stabilize your health for now.",
+    "source": "minecraft_wiki_Mobs_Chicken Jockey",
+    "conversation_type": "survival_scenarios",
+    "thinking": "Given the player's situation, they need to focus on immediate threat management, resource utilization, and prioritization. To start, they should prioritize their health recovery. Since they're low on hearts, finding a way to regenerate or heal them is crucial."
+  },
+  {
+    "instruction": "How do I get a Heart of the Sea to craft a Conduit?",
+    "input": "",
+    "output": "To craft a Conduit, you'll need the Heart of the Sea. Find a buried treasure marked with a red X on a map from an ocean ruin or shipwreck. Feed raw cod or salmon to a dolphin in the game world until it swims towards one of these locations. This should reveal the location of the buried treasure, which contains the Heart of the Sea you need for crafting.",
+    "source": "minecraft_wiki_Items_Heart of the Sea",
+    "conversation_type": "game_mechanics",
+    "thinking": "First, I recall that the article mentions the Heart of the Sea is obtained from a buried treasure. Since dolphins can be found in ocean ruins and shipwrecks, and feeding them raw cod or salmon will cause them to swim towards these locations, it's likely that buried treasures with a red X are associated with dolphin activity."
+  },
+  {
+    "instruction": "How do I make a vertical compact clock and can I obtain the parts anywhere?",
+    "input": "",
+    "output": "TBH, you need to craft Vertical Compact Clock's parts using 1x Redstone Torches, 4x Glass Panes (2 horizontal, 2 vertical), and 2x Redstone Dust. AFAIK, you can find all those materials in the game's default biomes or by mining them from the world's blocks. Once you have them, arrange the glass panes in a 2x1 grid, then add torches to power the circuit; place the redstone dust on the top and bottom sides of the vertical glass pane for optimal performance.",
+    "source": "minecraft_wiki_Mechanics_Redstone circuits/Clock/Vertical compact clock",
+    "conversation_type": "mining_and_resources"
+  },
+  {
+    "instruction": "How do I find a desert biome where I can encounter spider jockeys?",
+    "input": "",
+    "output": "Desert biomes aren't typically associated with spider spawns, tbh. If you're looking to find spiders and their variants, consider going into forests, caves, or swamp biomes, which have more hiding spots and water sources that attract mobs like spiders. I've found decent spider spawn rates in these types of areas lmao.",
+    "source": "minecraft_wiki_Mobs_Spider Jockey",
+    "conversation_type": "navigation_and_biomes",
+    "thinking": "To determine this, we need to consider the terrain types that are typically associated with spiders. Spider jockeys usually spawn in more open areas or biomes with less vertical space. Biome-wise, deserts have vast expanses of sand and can be conducive for spiders due to their hiding spots. I also recall reading that certain biome modifications, like high ceilings or walls, can affect spider behavior. This makes me think that the desert biome might not necessarily offer the ideal conditions for a spider jockey encounter."
+  },
+  {
+    "instruction": "What's the best way to get OR gates for my Redstone contraptions?",
+    "input": "",
+    "output": "You can find Repeater-isolated OR Gates by placing a slab on top of 2 repeaters facing opposite directions. The slab acts as an \"OR gate\". If you need more, just add another pair of repeaters and extend the slab to match.",
+    "source": "minecraft_wiki_Mechanics_Redstone circuits/Logic/OR",
+    "conversation_type": "mining_and_resources"
+  },
+  {
+    "instruction": "What's a good way to get a consistent water source for my base using Piston RS Latches?",
+    "input": "",
+    "output": "TBH, one of the most underrated things about Piston RS Latches is how well they can handle long-distance piping. If you're building an auto-servoir system, make sure to use a few Redstone Repeaters in line with your latches to maintain signal strength. I recall using this setup for my own base back in the day - just be careful not to create any bottlenecks or you'll end up wasting water. Afaik, a good rule of thumb is to use at least 3-4 repeaters between the source and your latched pipe. Lmao, it's easy to get frustrated when it doesn't work out right off the bat, but trust me, it's worth the hassle in the long run. One more thing: don't forget to test your system thoroughly before relying on it for water - you don't want a flood (literally) in your basement",
+    "source": "minecraft_wiki_Mechanics_Redstone circuits/Piston/Piston RS Latches",
+    "conversation_type": "gameplay_strategy"
+  },
+  {
+    "instruction": "What's up with that mob? I just spawned one in my Creative world, and it's already building a contraption out of sticks. How do I defeat or tame it?",
+    "input": "",
+    "output": "Mob Spawners aren't typically hostile, tbh. They'll just build their stuff and then despawn when the structure is complete. If you want to destroy one, you can just hit it with a few blows from a pickaxe or sword. No need to tame them!",
+    "source": "minecraft_wiki_Crafting_Crafting",
+    "conversation_type": "mob_knowledge",
+    "thinking": "Hmm, sounds like we're dealing with a Mob Spawner from Minecraft. These mobs are used to generate structures, but they can also be hostile towards players if you get too close."
+  },
+  {
+    "instruction": "How do I find and cultivate potatoes in a village?",
+    "input": "",
+    "output": "TBH, finding village farms can be tricky. Look for plots with 9 or more light level, as those have a higher chance of being planted with spuds. Then, use the 'farming' sight mode to spot potato crops, especially after nightfall. Once you find one, plant a seed in it, and voil\u00e0! Just remember to harvest before zombies can ruin your day",
+    "source": "minecraft_wiki_Items_Potato",
+    "conversation_type": "navigation_and_biomes"
+  },
+  {
+    "instruction": "How do I craft a crafting table?",
+    "input": "",
+    "output": "To craft a crafting table, you'll need 4 wooden planks. Open your inventory, shift-click the wood logs to add them to your inventory, then right-click on the planks in your inventory and craft a crafting table. The grid pattern doesn't matter here since it's just a simple crafting table.",
+    "source": "minecraft_wiki_Crafting_Recipe Book",
+    "conversation_type": "crafting_and_recipes"
+  },
+  {
+    "instruction": "What's a good strategy for utilizing pillagers effectively during raids, and how can I avoid common mistakes that waste my resources?",
+    "input": "",
+    "output": "For survival efficiency during raids, I recommend using pillagers as \"scouts\" to soften up enemies before engaging in combat. This allows you to take out key targets quickly and efficiently. To maximize their effectiveness, make sure to load their crossbows regularly and have them flanking your position to surround enemy mobs. Additionally, use your pillars wisely by moving them around to create new angles of attack.\n\nAlso, be cautious not to waste ammo by using your pillagers' crossbow attacks too frequently or in a way that leaves them exposed. Lastly, keep an eye on their health and adjust your strategy accordingly, as a single pillar can quickly become overwhelmed if not managed properly. By following these tips, you can unlock the full potential of your pillagers and emerge victorious from even the most challenging raids.",
+    "source": "minecraft_wiki_Mobs_Pillager",
+    "conversation_type": "gameplay_strategy",
+    "thinking": "To effectively utilize pillagers during raids, I'd consider their unique mechanics. Pillagers are excellent at spreading out to flank players, making them ideal for disrupting enemy formations. Their crossbow attacks also allow them to attack from a distance, which is perfect for clearing out groups of mobs. A good strategy would be to use pillagers as \"scouts\" to soften up enemies before you engage in combat.\n\nOn the other hand, there are some common mistakes to avoid when dealing with pillagers. Firstly, not using their crossbow attacks efficiently can waste ammo and resources. Secondly, relying too heavily on a single pillar can make it vulnerable to being targeted and destroyed. Lastly, failing to use their flanking abilities can limit their effectiveness."
+  },
+  {
+    "instruction": "Hey, I'm trying to get minecarts with hoppers for a Redstone contraption, but I have no idea where to start. What's the most efficient way to acquire one from scratch?",
+    "input": "",
+    "output": "Afaik, the most efficient way is to collect obsidian (16 blocks) and smelted coal (about 256 units of coal dust). Craft a set of hopper parts using the coal dust in a crafting table. Then, assemble the hoppers' components using the hopper parts. Place an empty minecart on top of the assembled hopper and you're good to go! If you have access to diamonds, it's also worth noting that they can be used as a more durable material for crafting the hopper.\n\nAdditionally, consider using a hopper with its 'enabled' property set to true for faster item collection. This will help you acquire minecarts with hoppers faster and reduce the need for reassembling the hoppers.",
+    "source": "minecraft_wiki_Items_Minecart with Hopper",
+    "conversation_type": "resource_chains",
+    "thinking": "To create a minecart with hopper from basic materials, we need to gather several resources and craft a series of items in a specific order. First, I'd collect 16 obsidian blocks (used for crafting the hopper) and some coal (for power). Next, I'll smelt the coal into coal dust, which is necessary for crafting the hopper's components. Then, I'll craft a set of hopper parts using the coal dust, and assemble them to create the hopper itself. With the hopper complete, I can add it to an empty minecart and start collecting items."
+  },
+  {
+    "instruction": "I just got the Phantom Cape and I'm wondering how it works. Does it give me any special powers or benefits?",
+    "input": "",
+    "output": "TBH, yeah - capes in Minecraft Dungeons are just for show. They don't affect gameplay at all, so you can wear whatever cape you want and still play the same way.",
+    "source": "minecraft_wiki_Items_Minecraft Dungeons:Cape",
+    "conversation_type": "game_mechanics",
+    "thinking": "The player asked about the Phantom Cape, which is a cosmetic item in Minecraft Dungeons. From what I've read on the wiki, capes provide no functional benefits to the hero. This means that wearing different capes won't affect gameplay mechanics, but rather just change how the character looks. Since there's no mention of special powers or benefits associated with the Phantom Cape specifically, I'm assuming it's just a cosmetic item like other capes."
+  },
+  {
+    "instruction": "What's different about the poison of Cave Spiders in Minecraft Story Mode compared to regular spiders?",
+    "input": "",
+    "output": "That's true! In Minecraft Story Mode, the poison of Cave Spiders is much more potent and can instantly kill players, unlike regular spiders where it just reduces their health over time.",
+    "source": "minecraft_wiki_Mobs_Minecraft Story Mode:Cave Spider",
+    "conversation_type": "game_mechanics",
+    "thinking": "The article mentions that Cave Spiders have a stronger poison, which can kill the player instantly. This is in contrast to regular spiders whose poison only weakens them."
+  },
+  {
+    "instruction": "How do I craft bleach? Is it available in Survival mode?",
+    "input": "",
+    "output": "TBH, bleach isn't easily accessible. To get it, use a lab table and 5 sand blocks; it'll be created. Note that you can't craft it in Creative or use /give either. Afaik, issues related to Bleach are logged on the bug tracker if you need help with any problems.",
+    "source": "minecraft_wiki_Items_Bleach",
+    "conversation_type": "crafting_and_recipes"
+  },
+  {
+    "instruction": "How do I craft a cauldron?",
+    "input": "",
+    "output": "To craft a cauldron, you'll need 8 iron ingots. Place the ingots in a square grid pattern on your crafting table:\n\n Iron Ingot | Iron Ingot | \n-----------|-----------|\n Iron Ingot | Iron Ingot | \n-----------|-----------|\n\nThis will yield one full cauldron. Keep in mind that using a crafting table is not necessary, as you can craft it directly from the inventory screen.",
+    "source": "minecraft_wiki_Brewing_Cauldron",
+    "conversation_type": "crafting_and_recipes",
+    "thinking": "To craft a cauldron, we need to gather iron ingots. Since we're looking for a cauldron, it's likely that we want one of its related items. The article mentions that cauldrons can be used to hold lava and other fluids. Considering the various potions listed in the article, it's possible that the player wants to craft a brewing stand or brew specific potions."
+  },
+  {
+    "instruction": "Can I tame a creeper that's standing next to tall grass?",
+    "input": "",
+    "output": "Creeper behavior can be tricky, but yes, you can defeat it by punching it. Tall grass might make it harder for mobs to attack you, but if they get too close, they'll still take damage from your punch.",
+    "source": "minecraft_wiki_Blocks_Grass",
+    "conversation_type": "mob_knowledge"
+  },
+  {
+    "instruction": "How do I craft a firework star?",
+    "input": "",
+    "output": "To craft a firework star, you'll need 4 fireworks stars. Simply right-click on your crafting table and arrange the fireworks in a 2x2 grid like this:\n\n \nitem: Fireworks Star\ncount: 4\n\nMake sure to use the correct firework stars (not expired or damaged ones). If you're having trouble finding them, try searching for them in a Nether fortress. Don't bother trying to find a firework star that's been used before; they're too rare and usually have weak effects.",
+    "source": "minecraft_wiki_Crafting_Recipe",
+    "conversation_type": "crafting_and_recipes"
+  },
+  {
+    "instruction": "How do I craft Chorus Flowers?",
+    "input": "",
+    "output": "To craft a single Chorus Flower, you'll need 1 block of end stone. Simply place the end stone block in your crafting grid, and you should see a Chorus Flower item appear. Note that there's no other material required for this recipe, as the flower will grow on top of the end stone once planted.",
+    "source": "minecraft_wiki_Blocks_Chorus Flower",
+    "conversation_type": "crafting_and_recipes",
+    "thinking": "To craft Chorus Flowers, we need to gather resources. The article mentions that Chorus Flowers are used to grow Chorus Plants. Given that, it's likely we'll need some End Stone or a Chorus Plant Block as the base material. Since the flowers can be planted on end stone in any dimension, I'm going to assume we need end stone for this craft."
+  },
+  {
+    "instruction": "How do I get villagers to ring a bell when there's a raid approaching?",
+    "input": "",
+    "output": "AFAIK, in Bedrock Edition, bells ring automatically at the start of a raid, warning villagers to return to their houses. In Java Edition, if a villager is close enough to the center of the village when the first wave appears, they'll rush to ring the bell before heading into their house.",
+    "source": "minecraft_wiki_Mechanics_Bell",
+    "conversation_type": "game_mechanics"
+  },
+  {
+    "instruction": "How do I make a firework star using black dye?",
+    "input": "",
+    "output": "To craft a firework star, you'll need 4 gunpowder and 1 black dye. Place them in a crafting grid like this:\n\n 1 | 1 | 1\n ---------\n 1 | G | 1\n ---------\n 1 | 1 | 1\n\nG = Gunpowder, B = Black Dye\n\nMake sure you have enough gunpowder and the correct ratio of dye. Lmao, don't waste your resources if you're not sure!",
+    "source": "minecraft_wiki_Items_Black Dye",
+    "conversation_type": "crafting_and_recipes"
+  },
+  {
+    "instruction": "I'm trapped in a cave with zombies and only have 3 hearts left, what should I do?",
+    "input": "",
+    "output": "Grab that bucket of water and throw it at 'em. Zombies don't like getting wet too much. While you're doing that, start making your way to the nearest light source - it's gotta be torches or glowstones, preferably both. Don't try to fight the zombies head-on; I've been in worse spots before and lived to tell the tale. Once you get some light, use a Flint & Steel to light up any dark areas. And for the love of all things Minecraft, don't forget to check your inventory - do you have any stacks of food or medical supplies that might help you recover?",
+    "source": "minecraft_wiki_Mechanics_Redstone circuits/Clock/Advanced 1-tick piston clock",
+    "conversation_type": "survival_scenarios",
+    "thinking": "Alright, gotta act fast. First, I need to know how many zombies are around me. If there's one or two, I can try to lure it away from me using some water or lava. But if there are three or more, I need a different plan."
+  },
+  {
+    "instruction": "I'm trying to get a dropper to drop arrows into my jukebox. How do I make that happen?",
+    "input": "",
+    "output": "Yeah, it's pretty straightforward. Just put an arrow in one of the dropper's inventory slots, then activate the dropper with a redstone signal. The arrow will be ejected into the air, and if your jukebox is facing the same direction as the arrow, it'll get sucked in.",
+    "source": "minecraft_wiki_Mechanics_Dropper",
+    "conversation_type": "mob_knowledge"
+  },
+  {
+    "instruction": "I'm trying to get some steak for my wolf companion, but I'm not sure how. Can you tell me how to obtain it?",
+    "input": "",
+    "output": "Try killing a cow on fire, or use a sword with Looting if you have one. That should give you more steak drops.",
+    "source": "minecraft_wiki_Items_Steak",
+    "conversation_type": "mining_and_resources",
+    "thinking": "To obtain steak, we need a cow or mooshroom that has been killed in a way that drops raw beef. If the cow dies while on fire, it will drop steak instead of raw beef. We can also use a weapon with the Looting enchantment to increase the number of steak drops."
+  },
+  {
+    "instruction": "I'm trying to craft Awkward Potions and I need Nether Wart. Where can I find it?",
+    "input": "",
+    "output": "TBH, you're best off farming it yourself. You can find mature Nether Wart crops in nether fortresses or bastion remnants; just look for them in the corners. If that's too much trouble, you can also try generating one in soul sand gardens around stairwells or in bastion remnants with courtyards.",
+    "source": "minecraft_wiki_Brewing_Nether Wart",
+    "conversation_type": "mining_and_resources",
+    "thinking": "To make an Awkward Potion, we need 1 Nether Wart as a primary ingredient. According to the article, Nether Wart is harvested from nether wart crops found in nether fortresses or bastion remnants. It can also be generated in soul sand gardens around stairwells and in the courtyards of housing unit bastion remnants."
+  },
+  {
+    "instruction": "How do I craft a crafting table?",
+    "input": "",
+    "output": "To craft a 3x3 crafting grid, you'll need 4 wooden planks. Place the planks in a square shape on the crafting table, then right-click it while facing it to bring up the interface. Choose your recipe from the book, and you're good to go!",
+    "source": "minecraft_wiki_Crafting_Crafting",
+    "conversation_type": "mining_and_resources"
+  },
+  {
+    "instruction": "What's a good strategy for using twisting vines to create a steady supply of food and materials in the Nether?",
+    "input": "",
+    "output": "First off, you should know that twisting vines are super useful for finding resources. AKA, if you're having trouble finding obsidian or coal, just dig up some twisting vines on the ground - they'll drop all sorts of goodies.\n\nFor survival efficiency, I'd recommend using twisting vines to create a steady food supply. You can apply bone meal to any twisted vine in your Nether base and it'll start growing immediately. This is especially useful for keeping yourself fed when you're not able to find other food sources. Just be careful not to overdo it - too many growths can make the area look like a weird, green forest.\n\nAnother trick I use is to place twisting vines in my composter. They've got a 50% chance of raising the compost level by 1, which can be super useful for brewing potions or crafting food items. Just be sure you're not blocking off any light sources - that'll make it hard for the compost to break down.\n\nCommon mistake to avoid: don't try to climb twisted vines while holding a tool or other item. You'll just end up dropping everything and getting poked in the eye with the pickaxe. Keep your hands free, and you'll be golden.\n\nAdvanced technique: if you're looking to optimize your twisting vine growth, I've found that applying bone meal to warped nylium can create a whole new batch of vines on top of existing ones. It's like having a never-ending supply of twisted greens - just be sure you're in the right biome (Nether, duh).",
+    "source": "minecraft_wiki_Items_Twisting Vines",
+    "conversation_type": "gameplay_strategy"
+  },
+  {
+    "instruction": "How do I get soul soil? Is it just sitting around waiting for me?",
+    "input": "",
+    "output": "Yeah, soul soil's just chillin' in soul sand valleys. If you're in one of those biomes, keep an eye out for the blocks. You can also collect it by breaking it with any tool or just hand-breaking it. A shovel's the quickest way to do that.",
+    "source": "minecraft_wiki_Blocks_Soul Soil",
+    "conversation_type": "mining_and_resources",
+    "thinking": "To obtain soul soil, I need to understand its natural generation pattern. According to the article, soul soil generates naturally in soul sand valleys. So, if I'm in a soul sand valley biome, I should be able to find soul soil blocks nearby. The article also mentions that soul soil can be obtained by breaking it with any tool or by hand, and that using a shovel is the fastest way to break it."
+  },
+  {
+    "instruction": "How can I craft a raw copper block?",
+    "input": "",
+    "output": "To craft a raw copper block, you'll need 9 copper ingots. Place them in a crafting grid like this:\n\n\n\n\nYou can also use an industrial crafting table to craft the blocks more efficiently. Afaik, there aren't any common mistakes to avoid when crafting raw copper, but be careful not to overcraft if you're using it for resource gathering - lava farms can get expensive tbh.",
+    "source": "minecraft_wiki_Blocks_Block of Raw Copper",
+    "conversation_type": "crafting_and_recipes"
+  },
+  {
+    "instruction": "Hey, I'm having trouble making progress on my base. Can you give me some tips on how to use crafting tables efficiently for building and repairing structures?",
+    "input": "",
+    "output": "TBH, I'd say one of the most underrated uses for crafting tables is for creating modular furniture pieces. Afaik, it's hard to find tutorials that show this, but just place a few wooden planks in a 3x3 grid, and voil\u00e0! You've got a basic chair or table that can be replicated across your base.\n\nFor building efficiency, I'd recommend making a crafting template book on paper beforehand. This will help you visualize how to arrange items for recipes like stone stairs or brick walls. Imo, this can save you hours of trial-and-error on the fly.\n\nOne thing to avoid is getting stuck in one spot when crafting - just move your inventory around and try different patterns! It's easy to get caught up in optimizing a single recipe at a time.\n\nAdvanced players I've met use an optimization technique called \"grid hopping\" where they experiment with different recipes in the 3x3 grid before moving on to other areas of the base. This can be super helpful for making sure you have all the necessary materials scattered out across your build.\n\nLastly, always keep an eye on your inventory space - it's easy to get caught up in making fancy decorative pieces and forget about storage efficiency! Lmao, trust me, I've been there too",
+    "source": "minecraft_wiki_Crafting_Crafting",
+    "conversation_type": "gameplay_strategy"
+  },
+  {
+    "instruction": "Can I make a boat using planks, and if so, how many of each type do I need for it?",
+    "input": "",
+    "output": "Afaik, you can craft a boat using 3 of any plank type. The type doesn't matter.",
+    "source": "minecraft_wiki_Blocks_Planks",
+    "conversation_type": "game_mechanics"
+  },
+  {
+    "instruction": "I'm trying to make a Redstone circuit but I've never seen TFF Z4 mentioned before. What's it used for and how can I get some?",
+    "input": "",
+    "output": "To build with Redstone circuits that utilize Memory/TFF Z4, you'll need to craft QTT (Toggle Toggle) Flip-flop Z4. You can create one by placing a 3x3 grid of Redstone Torches, with the middle Torch's top and bottom faces facing up. Connect the leftmost Torch to the rightmost Torch's top face, and ensure all other connections are proper for the desired circuit configuration. Once crafted, QTT Flip-flop Z4 should become available in your inventory; be sure to use it correctly in your Redstone design.",
+    "source": "minecraft_wiki_Mechanics_Redstone circuits/Memory/TFF Z4",
+    "conversation_type": "mining_and_resources",
+    "thinking": "The article mentions that TFF Z4 is part of the Redstone circuit/Memory section, likely referring to its use in advanced Redstone contraptions. A quick scan through the article doesn't provide explicit information on obtaining TFF Z4, but it does mention other components like QTT Flip-flop Z4, which might be related or used as a substitute."
+  },
+  {
+    "instruction": "Can someone tell me how to defeat a JK Latch mob? I've been trying for ages but it's just not dropping anything.",
+    "input": "",
+    "output": "TBH, there's no need to fight one - JK Latches just don't get aggressive and won't drop anything useful if you're not trying to \"kill\" them (imo, the term doesn't really apply here). If you want the A block for the memory component, you can just place a Torch next to it in your inventory, then place the Memory on top of it. This'll trigger it to drop the JK Latch's A Block.",
+    "source": "minecraft_wiki_Mechanics_Redstone circuits/Memory/JK Latch A",
+    "conversation_type": "mob_knowledge",
+    "thinking": "To determine the best approach, let's consider the JK Latch's behavior as mentioned in the wiki. The article states that JK Latches are passive mobs that spawn on Torches. Given their nature, they wouldn't be considered hostile entities to begin with, so combat isn't a viable option. Instead, I'd think about what might encourage one to drop loot or provide valuable information."
+  },
+  {
+    "instruction": "How do I craft a brightening cauldron?",
+    "input": "",
+    "output": "To craft a brightening cauldron, you'll need 4 iron ingots. Place them in a square shape on the crafting grid, like this:\n\n\n   +---+ \n   |   | \n   +---+\n\nThe brightening cauldron is ready to use!",
+    "source": "minecraft_wiki_Blocks_Cauldron",
+    "conversation_type": "crafting_and_recipes"
+  },
+  {
+    "instruction": "How do I make a bottle of entity from scratch using basic tools?",
+    "input": "",
+    "output": "Alright, so first get some obsidian by digging deep or exposing bedrock near water sources (use a pickaxe). For the glass bottle, craft 8 glass panels using sand, then use flint and steel to smelt some coal. You'll need at least 2 glass panels for a basic glass bottle recipe: glass + glass \u2192 glass bottle. Once you have an empty bottle, fill it with an entity mixture \u2013 this involves crafting bottles of void (which we can make later) and adding drops from your desired mob. To craft a bottle of void, right-click the bottle with a transformed player, then convert it to the desired form using another bottle. For efficiency, focus on gathering resources like obsidian and sand, as well as crafting glass bottles quickly. For an alternative path, if you have access to glass or already know how to make glass bottles, start there \u2013 just fill with entity drops when you're ready.",
+    "source": "minecraft_wiki_Items_Bottle of Entity",
+    "conversation_type": "resource_chains",
+    "thinking": "To create a bottle of entity, we need to start with the essential resources. First, we'll need obsidian for crafting the bottle itself. We can mine it from underground caves or by exposing bedrock blocks near water sources. Next, we'll require an empty bottle to fill with the entity mixture. This means we need glass bottles, which can be crafted using glass panels and a furnace. However, since we're starting with basic tools, we'll have to use Flint and Steel to smelt ores for the necessary materials."
+  },
+  {
+    "instruction": "How do I get a button to drop as an item when it's mined?",
+    "input": "",
+    "output": "In Bedrock Edition, you need a pickaxe to mine a stone/polished blackstone button. In Java Edition, you don't need one, but in both cases, the button will drop if its attachment block is removed or destroyed.",
+    "source": "minecraft_wiki_Mechanics_Button",
+    "conversation_type": "mob_knowledge"
+  },
+  {
+    "instruction": "How do I find snowy taigas in Minecraft?",
+    "input": "",
+    "output": "To find snowy taigas, you'll want to explore mountain groves or biomes labeled as 'Old Growth Pine Taiga' or 'Spruce Taiga'. Make sure your game settings are set to a suitable difficulty level and world type. With a bit of luck, you should be able to stumble upon one!",
+    "source": "minecraft_wiki_Mobs_Fox",
+    "conversation_type": "navigation_and_biomes",
+    "thinking": "To find snowy taigas in Minecraft, we need to consider where these biomes typically spawn. According to the game's documentation, snowy taigas can be found in mountain groves and are also associated with old growth pine taigas and spruce taigas. This suggests that snowy taigas often occur in colder climates within these biome types."
+  },
+  {
+    "instruction": "What biome is Glow Lichen typically found in?",
+    "input": "",
+    "output": "AFAIK, it's a decent spot for cave exploration. Look for exposed stone, andesite, diorite, granite, calcite, tuff, deepslate, or dripstone blocks near water sources. TBH, it can be tricky to find, but if you see a solid block with lava or water nearby, there's a good chance you'll stumble upon some glow lichen tbh.",
+    "source": "minecraft_wiki_Blocks_Glow Lichen",
+    "conversation_type": "navigation_and_biomes"
+  },
+  {
+    "instruction": "What's the most efficient way to get azaleas from scratch with basic tools?",
+    "input": "",
+    "output": "To get azaleas, start by crafting a pickaxe. You can do this using stone, which is found in abundance in caves or on the ground near village structures.\n\nNext, mine some coal and craft a furnace. Use the furnace to smelt the stone you mined earlier into toolstone, then make an axe and some shears. The axe will help with tree farming, while the shears are crucial for harvesting azaleas without breaking them.\n\nWith your new tools, head to a lush cave and start mining moss blocks. You'll need these to grow azaleas later. Keep an eye out for any nearby flowers or trees; they can be used as fuel in your furnace if you're running low on coal.\n\nWhen you've gathered enough moss, use the bone meal on it to grow azaleas. This is a time-consuming process, but it's worth it since azaleas are highly renewable and stack nicely. Be sure to keep an eye out for any nearby mobs or lava flows that might damage your azalea tree.\n\nAs you grow more azaleas, use them as fuel in your furnace to smelt some iron ingots. These will come in handy for making better tools later on.\n\nKeep repeating this process until you've got a decent stockpile of azaleas. You can also try using the Fortune enchantment on your pickaxe to increase the drop rate of azaleas and their leaves.\n\nOne trick to speed up the process is to use the /give command in Creative mode to spawn some bone meal, then just bonemeal all your moss blocks at once. This will save you a lot of time and effort.",
+    "source": "minecraft_wiki_Items_Azalea",
+    "conversation_type": "resource_chains"
+  },
+  {
+    "instruction": "What are some effective strategies for using crafting tables to optimize my resource gathering and tool production in Survival mode?",
+    "input": "",
+    "output": "For shapeless recipes like fermented spider eyes, try placing the eye anywhere within the 2x2 grid \u2013 it's actually more efficient than trying to find a specific spot. As for levers, you can use them to automate door-opening and closing, saving you time and resources.\n\n Common mistakes to avoid include using too many redstone components, which can slow down your contraptions. Also, be mindful of your inventory space when crafting \u2013 don't try to make too much at once if it'll leave you with no room for other essential items.\n\n Experienced players often use advanced techniques like mob farming and automated food production. For example, set up a simple farm using water or lava to spawn mobs, then harvest their drops in an efficient pattern. This way, you can feed yourself and your friends without having to manually collect resources every time.",
+    "source": "minecraft_wiki_Crafting_Crafting",
+    "conversation_type": "gameplay_strategy"
+  },
+  {
+    "instruction": "What's the deal with blaze powder? Can't I just drop it somewhere to get some?",
+    "input": "",
+    "output": "tbh, nope - you can't just drop it somewhere to get some blaze powder. You need to kill a blaze and collect the blaze rod, then smelt the rod into 4 pieces of blaze powder. Each piece can brew up to 20 batches of potions (imo, that's a lot of potions).",
+    "source": "minecraft_wiki_Brewing_Blaze Powder",
+    "conversation_type": "game_mechanics",
+    "thinking": "To figure out how blaze powder works, let's break down what we know from the wiki article. Blaze powder is made by killing a blaze and getting the resulting blaze rod. The main uses for blaze powder are brewing strength potions, making eyes of ender (which take you to The End), and fueling brewing stands."
+  },
+  {
+    "instruction": "What's the most efficient way to get leggings from scratch using basic tools?",
+    "input": "",
+    "output": "To make leggings from scratch, you'll need to start by crafting a set of diamond tools. Find 3 diamond ores and smelt them in a furnace to get diamonds. Use these diamonds to craft a diamond sword, pickaxe, axe, and armor (the latter is optional for now). With your new gear, venture into a nether fortress and mine for obsidian. You'll need 16 obsidian blocks. Craft an obsidian furnace and smelt the obsidian to get obsidian ingots. \n\nNow, craft 8 iron bars using an iron ingot as fuel in the furnace. Use these iron bars to build an iron pickaxe (3 bars). Mine some coal and iron ore to gather materials for future crafting. Next, find a village with a blacksmith villager. Sell your coal and iron ingots to them for emeralds.\n\nWith enough emeralds, purchase diamond tools from a trade vendor or fence in the village. Now you can upgrade your gear to diamonds and craft a set of enchanted diamond leggings. The best way to do this is by using experience points earned during a fight against an elder guardian or other hard mobs.\n\nA better alternative for those with a lot of iron ingots, though, is to craft chainmail armor first (using the method described above) and then upgrade it into netherite at a forge. After that, combine the netherite leggings with diamond leggings, then with Netherite Ingot and finally an Anvil Repairing to get the ultimate set of enchanted diamond leggings.\n\nIn terms of time saved, you can consider farming piglins for golden leggings or collecting rare drops from Hard or Extreme difficulty mode, but this method may require more time than others.",
+    "source": "minecraft_wiki_Items_Leggings",
+    "conversation_type": "resource_chains"
+  },
+  {
+    "instruction": "What's up with the Larger Icy Golem in Giant Consequences? How do you defeat it?",
+    "input": "",
+    "output": "TBH, it's just a tougher version of the regular Icy Golems. To beat it, you need to break all its limbs - pretty straightforward, lmao. If Jesse goes solo, he can just take off its legs and get to its head. Easy enough.",
+    "source": "minecraft_wiki_Mobs_Minecraft Story Mode:Larger Icy Golem",
+    "conversation_type": "mob_knowledge"
+  },
+  {
+    "instruction": "What's a solid strategy for using brewing to gain an advantage in survival mode, especially when it comes to managing resources and dealing with mobs?",
+    "input": "",
+    "output": "One of my go-to brewing strategies is creating a batch of Regeneration + potions. I like to brew at least 8-10 of these before heading out into the wild. To make them more efficient for combat encounters, you can corrupt a single Regeneration + potion using a fermented spider eye to create a Harming potion that still has the Regeneration effect.\n\nFor managing resources, you can also try brewing some Water + Weakness potions in bulk. This gives you a steady supply of health-restoring items without over-extending your carry capacity. Just be sure not to over-craft, as it's easy to end up with too many and have to waste them on mobs that aren't worth the risk.\n\nCommon mistake to avoid is trying to brew too many potions at once, especially if you're new to brewing. Focus on perfecting a few key recipes first, then expand your repertoire later. And don't underestimate the power of using splash potions in tight spots \u2013 it's amazing how much of an edge they can give you.\n\nAdvanced technique I like to use is combining brewing with command-based inventory management. By using commands or an item editor to manipulate NBT data, I've been able to create custom potion recipes that aren't possible through standard crafting. Just be aware that this requires some knowledge of Minecraft's command system and may not work in all versions.\n\nLastly, always remember that brewing is a long-term game \u2013 don't expect it to give you instant gratification! Spend the time learning how to brew effectively, and the rewards will pay off over time.",
+    "source": "minecraft_wiki_Brewing_Brewing",
+    "conversation_type": "gameplay_strategy"
+  },
+  {
+    "instruction": "Hey bot, I'm trying to craft a T Flipflop L1. What materials do I need?",
+    "input": "",
+    "output": "TBH, it's pretty straightforward. You'll need 2 Redstone Dust, 1 Redstone Torch, and 4 Obsidian for the base. Crafting grid pattern is:\n\n# |##| #\n###|####|\n# |##| #\n\nMake sure you're using a Crafting Table to craft this. Also, avoid using low-quality Obsidian; it might not hold up well to Redstone abuse lmao.",
+    "source": "minecraft_wiki_Mechanics_Redstone circuits/Memory/TFF L1",
+    "conversation_type": "crafting_and_recipes"
+  },
+  {
+    "instruction": "Can I craft a Withered Nether Star in Minecraft Story Mode?",
+    "input": "",
+    "output": "A Withered Nether Star can be crafted with 8 Obsidian blocks and 2 Purpur Blocks, placed in the top layer of a Crafting Table.",
+    "source": "minecraft_wiki_Items_Minecraft Story Mode:Withered Nether Star",
+    "conversation_type": "crafting_and_recipes",
+    "thinking": "To craft a Withered Nether Star, we'll need to start by finding resources. The Withered Nether Star requires 8 Obsidian blocks, which can be obtained from defeating the Wither Storm or collecting it from the game's world. We also need 2 Purpur Blocks to power at least nine Beacons, which is a required condition for crafting this item. I've seen Jessie place one in the center of Beacontown's beacon, but that's not necessary for crafting it."
+  },
+  {
+    "instruction": "What's a good strategy for using cauldrons to gain an edge in survival mode?",
+    "input": "",
+    "output": "Non-obvious uses for cauldrons include creating makeshift dye reservoirs by filling them with various dyes, which can then be used to color leather armor or other items. You can also use them as mini-farms for certain resources like powder snow or water.\n\n\nTo leverage cauldrons for survival efficiency, focus on crafting a reliable brewing system that allows you to produce potions and other useful items efficiently. This might involve building a network of cauldrons connected by pipes and buckets to streamline your potion-making process.\n\n\nCommon strategic mistakes to avoid include overfilling cauldrons with water or lava, which can lead to wasted resources and potential loss of valuable items. Also, be cautious when using cauldrons near flammable materials or in areas prone to explosions.\n\n\nExperienced players often use advanced techniques like creating a \"cauldron farm\" \u2013 a complex system that uses multiple cauldrons, pipes, and redstone contraptions to automate potion production on a large scale. This can significantly boost your survival efficiency, especially in long-term playthroughs or Hardcore mode.",
+    "source": "minecraft_wiki_Brewing_Cauldron",
+    "conversation_type": "gameplay_strategy"
+  },
+  {
+    "instruction": "What's a good way to get started with using Knowledge Books for survival, especially when it comes to optimizing my crafting process?",
+    "input": "",
+    "output": "First off, don't bother trying to use a Knowledge Book to craft basic stuff like stone tools or dirt blocks. That's not what it's for. Instead, look up recipes for more complex items like diamond gear or redstone contraptions. I used one to get the recipe for a decently efficient furnace design. Just type `/recipes` and filter by 'furnace' to find some good starting points.\n\nAnother thing that comes in handy is using Knowledge Books with limited crafting mode (gamerule doLimitedCrafting true). This forces you to unlock recipes before crafting anything, which can be super helpful for figuring out what's worth making. I've also found it useful for mapping out item combinations and optimizing my resource gathering workflow.\n\nOn the other hand, watch out for over-reliance on Knowledge Books \u2013 they can burn through your inventory pretty quickly. It's also easy to get stuck on one recipe and forget about others until you run out of materials. Don't be afraid to experiment with different recipes and combinations to find what works best for you.\n\nOne advanced technique I've found useful is using Knowledge Books in conjunction with Redstone contraptions to automate your crafting process. You can use the `/recipes` command to add items to a Knowledge Book, then hook it up to a Redstone circuit that triggers when those items are available. It's a bit of a pain to set up at first, but once you have it working, it's a total game-changer for complex crafting projects.",
+    "source": "minecraft_wiki_Items_Knowledge Book",
+    "conversation_type": "gameplay_strategy"
+  },
+  {
+    "instruction": "I've been trapped in a zombie-infested cave for hours, and my food and health are running low. I only have 3 hearts left, but I don't have any stacks of cooked salmon or mutton to heal me. What do I do?",
+    "input": "",
+    "output": "TBH, you're gonna wanna get outta there ASAP. Can't survive on hunger alone for that long. \n\nGet to a nearby village and fish up some raw salmon. You can use the fishing hook and bait from your inventory. Then, craft cooked salmon in a furnace or smoker - it's faster than on a campfire.\n\nUse the cooked salmon while you're hot (hold shift + right-click) to restore 6 hearts. That should give you enough time to get out of there. If you can't make it to a village, try to find some mushrooms or berries to heal you up.",
+    "source": "minecraft_wiki_Items_Cooked Salmon",
+    "conversation_type": "survival_scenarios"
+  },
+  {
+    "instruction": "What's the deal with splash potions? How do they work when I throw them?",
+    "input": "",
+    "output": "When you throw a splash potion, it explodes on impact, applying its effects to nearby entities. The farther away an entity is from the center of the impact, the less potent the effect. Instant effects like healing or harming reduce in potency linearly with distance. Other effects have no change in potency but decrease in duration instead.",
+    "source": "minecraft_wiki_Brewing_Splash Potion",
+    "conversation_type": "game_mechanics"
+  },
+  {
+    "instruction": "How do I get a Winslow from scratch? What's the most efficient way to craft him?",
+    "input": "",
+    "output": "First, you'll need obsidian and a bucket of water. Build an obsidian pillar, then use the bucket to fill it with water. Get the blueprints for a boat, and craft one using 3 wooden planks, 2 sticks, and 1 string.\n\n\nTo make the boat more efficient, I recommend crafting a furnace first (4 blocks of coal, 2 wood logs) to create golden carrots (you can get them by smelting golden apples), which you'll need for the boat's sails. With these ingredients, craft the boat blueprint, then build and sail it across the water.\n\n\nOnce you reach the White Pumpkin's island, kill him with sword or bow (be careful of his tricks!). Take the items he drops, especially the enchanted flint and steel, and use them to craft a Nether Portal (5 obsidian blocks and 1 fire charge). Jump into the portal and follow it until you land near Winslow.\n\n\nKeep in mind that if you're playing on Hardcore mode, this will be your first death. Make sure you have an auto-saver enabled or you'll lose all your progress!\n\n\nAfaik, this is the most straightforward way to get a Winslow from scratch. However, some experienced players might prefer to craft a bed and set it to spawn Winslow with a command (if you're familiar with Cheats mode).",
+    "source": "minecraft_wiki_Mobs_Minecraft Story Mode:Winslow",
+    "conversation_type": "resource_chains"
+  },
+  {
+    "instruction": "How do I increase my chances of dropping sticks from a witch?",
+    "input": "",
+    "output": "To increase your chances of dropping sticks from a witch, use an item with at least 3 levels of Looting enchantment on it when killing or taming the mob. This will give you more sticks per drop, but keep in mind that sticks are still relatively rare drops compared to other items.",
+    "source": "minecraft_wiki_Mobs_Witch",
+    "conversation_type": "mob_knowledge",
+    "thinking": "First, let's look at the Minecraft Wiki article about witches. It says that witches have a 25% chance of dropping sticks. This is lower than other items they can drop. To increase our chances, we need to think about how Looting enchantments affect drops. According to the article, each level of Looting increases the maximum number of items dropped by one for each item. Since sticks are among the lowest-probability drops, using a high-level Looting enchantment will give us more opportunities to find them."
+  },
+  {
+    "instruction": "Is there a specific biome where I can find Illusioners?",
+    "input": "",
+    "output": "tbh, you'll never find them naturally spawning anywhere, so good luck with that. However, if you're looking to summon one using commands or data packs, just type `/summon illusioner` in the chat and it'll show up.",
+    "source": "minecraft_wiki_Mobs_Illusioner",
+    "conversation_type": "navigation_and_biomes"
+  },
+  {
+    "instruction": "How do I defeat a ravager?",
+    "input": "",
+    "output": "To defeat a ravager, use a shield to block its initial attack, then focus on hitting it from behind while it's stunned. You can also try luring it towards a wall or into a narrow space where you have better control over the fight.",
+    "source": "minecraft_wiki_Mobs_Ravager",
+    "conversation_type": "mob_knowledge"
+  },
+  {
+    "instruction": "What's a good way to get blaze powder from blazes?",
+    "input": "",
+    "output": "TBH, it's pretty straightforward - just kill a blaze, collect its blaze rod drops, and smelt them in a furnace with 4 fire charges to get blaze powder.",
+    "source": "minecraft_wiki_Brewing_Blaze Powder",
+    "conversation_type": "mob_knowledge",
+    "thinking": "To obtain blaze powder, I need to consider how blazes are obtained and what drops they provide. Blazes drop blaze rods when killed, and these rods can be used to craft blaze powder. So, the key step here is killing blazes and then processing their dropped items (blaze rods) into usable blaze powder."
+  },
+  {
+    "instruction": "I'm trapped in a cave with zombies and only have 3 hearts left, what should I do?",
+    "input": "",
+    "output": "Focus on getting out ASAP. Need to get to safety, can't fight off the horde. If you're near a lava or fire source, make a run for it. Grab a few health-restoring items if you can. You might need to drop some tools, but prioritize getting out alive.",
+    "source": "minecraft_wiki_Mechanics_Activator Rail",
+    "conversation_type": "survival_scenarios"
+  },
+  {
+    "instruction": "How do I efficiently brew potions from scratch using basic tools?",
+    "input": "",
+    "output": "First, farm mushroom trees by killing them with a diamond sword. To make Mushroom Stems, punch the mushrooms to obtain stems. Collect a reasonable amount of soil (about 5-10 blocks). Use a Crafting Table to create composted pile by placing a stem in the middle and adding 4 surrounding soil blocks. Place the compost next to water sources and wait for Fungal Balls to drop. To brew Nether Wart, put an empty water bottle in a Brewing Stand, add Fungal Balls on top of it (grid pattern: Fungal Ball in Water Bottle). Then place Nether Wart at the bottom of the stand, following the brewing grid (Fungal Ball at the top and Nether Wart at the bottom). When you're ready to brew your potion, replace the Nether Wart with the desired base ingredient.",
+    "source": "minecraft_wiki_Brewing_Brewing",
+    "conversation_type": "resource_chains",
+    "thinking": "To start brewing potions from scratch, you'll need to gather Nether Wart. To get Nether Wart, you'll need Fungal Balls (which require Mushroom Stems and Soil). You can find Mushroom Stems by farming mushroom trees. Once you have Mushroom Stems, use a Crafting Table to create a composted pile. Then, add the soil on top of it to make the compost. Place the compost near a water source and wait for the Fungal Balls to drop (this might take some time). After obtaining Fungal Balls, simply place them in a Brewing Stand with Water to brew Nether Wart."
+  },
+  {
+    "instruction": "How do I craft a lightning rod?",
+    "input": "",
+    "output": "To craft a lightning rod, you'll need 6 sticks. Place them in a horizontal row across the crafting grid. That's it - just 6 sticks, no other materials needed. No special crafting stations required, and no common mistakes to avoid, since it's pretty straightforward. If you're having trouble finding sticks, you can always try punching trees for wood, or use your existing inventory if you already have them.",
+    "source": "minecraft_wiki_Mechanics_Lightning Rod",
+    "conversation_type": "crafting_and_recipes"
+  },
+  {
+    "instruction": "What's the difference between a furnace and a blast furnace?",
+    "input": "",
+    "output": "In a blast furnace, you use coal to smelt ores into ingots. To craft in a blast furnace, place the item you want to smelt (e.g., iron ore) on the topmost slot and coal below it. Right-click the coal until the coal runs out. The result will be an ingot of the corresponding material.",
+    "source": "minecraft_wiki_Crafting_Recipe Book",
+    "conversation_type": "mob_knowledge",
+    "thinking": "The main difference lies in their purpose. A furnace smelts ores into ingots, whereas a blast furnace uses coal to smelt ores more efficiently."
+  },
+  {
+    "instruction": "What's a good strategy for acquiring gold nuggets from Piglins in Survival mode without sacrificing too much resources?",
+    "input": "",
+    "output": "One effective way to get gold nuggets from piglins is by using your bow to target their crossbows, which will cause them to reload and give you an opening to attack. You can also lure them into a tight space with some food or other enticing items, then quickly close the distance and punch them while they're distracted. If you time it right, they'll drop gold nuggets instantly. It's also worth noting that if you're wearing full golden armor, piglins are less likely to attack you in the first place.\n\nCommon strategic mistakes to avoid include underestimating the piglin's detection range, so make sure to keep a safe distance and stay mobile. Also, be careful not to get too close to them while they're reloading their crossbows, as they can still shoot at you if they sense danger. Experienced players often use this tactic in combination with other strategies like luring piglins into lava or water to weaken them before attacking.\n\nFor those looking to take it up a notch, some players use advanced techniques like using golden apples to lure piglins towards a safe location, then quickly killing them and retrieving the gold nuggets. Others have been known to use trap doors or hidden passages to sneak up on piglins and get an easy kill. Just remember to stay alert and adapt your strategy based on the situation \u2013 with practice, you'll be raking in those gold nuggets in no time!",
+    "source": "minecraft_wiki_Mobs_Piglin",
+    "conversation_type": "gameplay_strategy"
+  },
+  {
+    "instruction": "How do I craft a Potion of Healing?",
+    "input": "",
+    "output": "To craft a Potion of Healing, you'll need 5 water bottles. Place them on your crafting table in a square grid pattern, and then add a bucket of water to the cauldron. Wait for it to brew, and then drink the resulting potion to apply its healing effect.",
+    "source": "minecraft_wiki_Brewing_Potion",
+    "conversation_type": "crafting_and_recipes",
+    "thinking": "To craft a Potion of Healing, we need to know that it's brewed using water bottles as the base ingredient. However, potions can't be combined in a cauldron or mixed with water. Instead, we can brew it using water bottles alone. Let's check the brewing recipe for a standard potion and see if there are any specific conditions required."
+  },
+  {
+    "instruction": "I'm trapped in a cave with zombies and only have 3 hearts left. What should I do?",
+    "input": "",
+    "output": "First, try to find a safe spot to sit down and catch your breath. Use shears to craft a few stacks of raw sheep (if you don't already have them) and then use bone meal to spread glow lichen on the walls and ceiling around you - it'll give you some light. If you can't see outside, try to find a spot with some natural light so you can get an idea of your surroundings. Once you've got a bit more light, focus on finding any nearby resources like wood or stone that could help you craft a better defense or escape route.",
+    "source": "minecraft_wiki_Blocks_Glow Lichen",
+    "conversation_type": "survival_scenarios"
+  },
+  {
+    "instruction": "I'm trying to get a Tropical Slime in Minecraft Earth. How do I even spawn one?",
+    "input": "",
+    "output": "tbh, they're kinda hard to come by - you need to find jungle biomes and then wait for it to spawn (afaik, they had a 0.4% drop rate from pond tappables). Good luck with that!",
+    "source": "minecraft_wiki_Mobs_Minecraft Earth:Tropical Slime",
+    "conversation_type": "game_mechanics"
+  },
+  {
+    "instruction": "Can you give me some tips on how to effectively use a Boneclub for survival advantage in Minecraft Dungeons?",
+    "input": "",
+    "output": "First off, use a Boneclub when you're dealing with multiple mobs at once, like in the Soul Sand Valley DLC's Waveform wave fights. You can quickly take out groups of enemies before they overwhelm you. Also, its area damage makes it great against clusters of smaller enemies like Magma Cubes or Zombies.\n\nFor solo encounters, try to get a clear lane and keep your back to a wall for extra protection while taking potshots with the Boneclub. Don't be afraid to take some damage if you need to retreat to heal - you can always come back when you're full health again.\n\nOne mistake new players make is trying to use a Boneclub in tight spaces or close quarters where its slow speed and high attack angle become liabilities. Instead, try to create some breathing room to avoid these sorts of situations.",
+    "source": "minecraft_wiki_Items_Minecraft Dungeons:Boneclub",
+    "conversation_type": "gameplay_strategy",
+    "thinking": "To start, I'd think about what makes the Boneclub unique - its high damage output and ability to deal combo hits. This means it's especially useful against tough enemies with low health, like Guardians or Witches. However, its speed is relatively slow, so I'd need to consider how to position myself for optimal attacks."
+  },
+  {
+    "instruction": "I'm trying to get my hands on some Blaze Powder for the first time. How do I go about making it from scratch?",
+    "input": "",
+    "output": "First, you'll need to craft a Furnace using 8 Cobblestone blocks, which can be gathered from Stone or Rock Caves with a Pickaxe (you'll need at least 12-16 blocks of Cobblestone for the entire process). Next, collect Blaze Rods by killing Blazes in The Nether - you can find them in the Nether Fortress structures, and they drop when killed. Once you've got 3 Blaze Rods, smelt them into Blaze Powder using your Furnace (you'll need Coal to fuel it).\n\nFor brewing stands and potions, just use the Blaze Powder as a normal ingredient. For Eyes of Ender, you can combine it with Ender Pearls and Sand.\n\nA word of caution: if you're new to The Nether, watch out for Ghasts - they love blasting Blazes and will get in your way if you're not careful.\n\nIf you're having trouble finding resources, consider exploring a larger area or building an Nether portal to access more Blaze Rods.",
+    "source": "minecraft_wiki_Brewing_Blaze Powder",
+    "conversation_type": "resource_chains"
+  },
+  {
+    "instruction": "What's a good strategy for using demultiplexers to efficiently route redstone signals between different parts of my base?",
+    "input": "",
+    "output": "One effective strategy for using demultiplexers is to use them as part of a larger circuit design that incorporates other redstone components. By combining demultiplexers with AND gates, logic buffers, and other components, you can create more efficient and reliable signal routing systems. Additionally, demultiplexers can be used as building blocks for more complex circuits, such as those used in combination locks or timers.",
+    "source": "minecraft_wiki_Mechanics_Tutorials/Advanced redstone circuits",
+    "conversation_type": "gameplay_strategy",
+    "thinking": "To answer this question, we need to consider how demultiplexers work and their limitations. Demultiplexers are essentially circuits that can split an input signal into multiple outputs based on the value of a control signal. They're useful for routing signals in complex networks. However, they can be prone to errors if not set up correctly.\n\nOne effective strategy is to use demultiplexers as part of a larger circuit design that incorporates other redstone components, such as AND gates and logic buffers. By using these components in combination with demultiplexers, we can create more efficient and reliable signal routing systems.\n\nAnother approach is to use demultiplexers as a building block for more complex circuits, such as those used in combination locks or timers. These types of circuits often require precise timing and control, which can be achieved using demultiplexers and other components.\n\nCommon mistakes to avoid when using demultiplexers include failing to properly set up the control signals or not accounting for potential errors in the signal routing process. Experienced players also know that it's essential to test and debug their circuits thoroughly before deploying them in a live environment.\n\nAdvanced techniques used by experienced players include using demultiplexers in conjunction with other components, such as resonant frequencies or pulse generators, to create more complex and efficient signal routing systems."
+  },
+  {
+    "instruction": "What's the best way to farm bricks for decoration without breaking the bank (or my sanity)?",
+    "input": "",
+    "output": "TBH, brick farming can be a tedious process. One underrated tactic is using clay balls in a lava flow. Here's how: create a small lava pool and place 2-3 clay balls on top of it. Wait for the clay to dissolve, then use a bucket or a shovel to scoop up the resulting bricks. This method yields around 20-30 bricks per hour, depending on your water source and lava pool size.\n\nAnother trick is to create a \"clay conveyor\" by placing clay balls in a series of buckets or chests connected by Hoppers. Use Redstone to automate the process, then have the Hoppers feed the bricks into a crafting table for decoration purposes. Just be careful not to waste resources due to mistakes!\n\nCommon mistake people make when farming bricks is neglecting to keep their resources organized. Make sure you label your Hoppers and chests clearly, or risk losing track of your progress (trust me, I've been there). Also, don't underestimate the value of a good bucket \u2013 invest in some better materials for water collection if you want to increase efficiency.\n\nFor advanced players, I recommend experimenting with different Redstone contraptions to automate entire brick farms. For example, you can use Piston-activated doors and command blocks to create an automated system that feeds bricks into your crafting table. Just be cautious not to overcomplicate things \u2013 sometimes, less is more in Minecraft!",
+    "source": "minecraft_wiki_Items_Brick",
+    "conversation_type": "gameplay_strategy"
+  },
+  {
+    "instruction": "What biome do Fermented Spider Eyes spawn in?",
+    "input": "",
+    "output": "TBH, they can be found in swamp biomes. Not guaranteed, tho - might drop from mobs if you're super unlucky.",
+    "source": "minecraft_wiki_Brewing_Fermented Spider Eye",
+    "conversation_type": "navigation_and_biomes"
+  },
+  {
+    "instruction": "Hey bot, I've got a bunch of Fermented Spider Eyes just lying around. What's the best way to use them for survival, aside from brewing some Invisibility Potions?",
+    "input": "",
+    "output": "TBH, one thing you can do with Fermented Spider Eyes is use them as a source of regeneration for your mob farm. Just brew an End Potion and add it to your mob farm's regeneration pool \u2013 the regeneration speed will increase significantly. That being said, lmao, don't even think about trying to brew a Wither Skewer with those things; it'll just end in tears. Afaik, brewing potions with negative effects can be tricky, so be careful with those recipes. One thing I did find useful was using Fermented Spider Eyes as an ingredient for the Potion of Weakness \u2013 it's actually pretty effective at debuffing mobs without leaving any nasty side effects.",
+    "source": "minecraft_wiki_Brewing_Fermented Spider Eye",
+    "conversation_type": "gameplay_strategy",
+    "thinking": "I'm considering the rarity of Fermented Spider Eyes as a resource, and how they can be leveraged in various situations. Since they're renewable and stackable, I should think about how to make the most of their availability. Brewed potions with negative effects are probably a great use case, but I should also explore other options that might take advantage of their unique properties."
+  },
+  {
+    "instruction": "What's a good way to avoid mob attacks while traveling on rails?",
+    "input": "",
+    "output": "One effective way to avoid mob attacks while traveling on rails is by using sticky pistons to guide mobs away from your rail. Place sticky pistons along the path where you expect mobs to follow, and position them so that they'll push mobs onto a different track or off the rail altogether. This will create a buffer zone between you and any aggressive mobs.\n\nAnother non-obvious use for rails is as a makeshift minecart jump track. By placing intersections on every other block of a straight track, you can create a minecart that jumps over gaps, allowing you to travel faster and avoid certain dangers. However, be cautious when using this technique, as it requires precise placement and can be unstable.\n\nCommon strategic mistakes to avoid include using rails as a permanent barrier, as mobs will eventually find a way around it. It's also important to keep in mind that rail-based defensive systems can be unreliable if not properly maintained or updated. Experienced players often use rails in combination with other defense mechanisms, such as water walls or lava pits, to create more effective traps.\n\nAdvanced techniques that experienced players use include using powered rails to propel minecarts at high speeds, allowing for quick escapes from danger. They also often use rail-based systems to create complex trap networks, combining multiple tracks and intersections to catch and defeat mobs.",
+    "source": "minecraft_wiki_Mechanics_Rail",
+    "conversation_type": "gameplay_strategy",
+    "thinking": "To answer this question, we need to consider how mobs interact with rails. In Bedrock Edition, some mobs like pillagers and zombies will avoid walking on rails, but walk off them when pushed onto them. This means that if you're using rails as a defensive mechanism, you'll want to use pistons or sticky pistons to gently push the mob off the rail instead of directly pushing it."
+  },
+  {
+    "instruction": "How do I get a crafting table from scratch with basic tools?",
+    "input": "",
+    "output": "Alright, so you wanna make a crafting table. First, you'll need to gather wood logs (at least 2) by punching trees. It's quick work if you've got a good spot.\n\nNext, craft four wooden planks from your logs using the crafting grid in your inventory - just place two logs side-by-side, then one on top of each of those, and you'll get the planks. You can use these to make a crafting table itself.\n\nTo make a crafting table, arrange nine wooden planks in a 3x3 grid, with an empty space at the bottom center - that's it! That's your crafting table.\n\nIf you're having trouble finding wood logs, you could try punching nearby trees or gathering them from a nearby forest biome. Also, just FYI, if you need some extra time-saving tips: use a bonfire to instantly gather wood logs if you've got an empty one nearby, and always keep an eye out for tree trunks that can be easily broken with stone picks.",
+    "source": "minecraft_wiki_Crafting_Crafting Table",
+    "conversation_type": "resource_chains"
+  },
+  {
+    "instruction": "I'm thinking of using Skeleton Horses to my advantage, but I've heard they can be tricky to handle. What are some effective strategies for utilizing them for survival?",
+    "input": "",
+    "output": "One non-obvious use for Skeleton Horses is as a rapid- exploration tool for cave systems. By jumping from block to block using the skeleton horse's increased jump height, you can traverse even the most treacherous terrain with relative ease. Additionally, their speed advantage underwater makes them perfect for exploring oceanic biomes or navigating through deep water.\n\nTo leverage Skeleton Horses for survival efficiency, focus on acquiring multiple of them and building a reliable transportation network between key points in your map. Use the saddle item to tame multiple horses at once, then use the Lead block to track and retrieve lost horses. It's also essential to have a solid understanding of the Skeleton Horse's movement patterns and habits, as well as its spawn locations.\n\nCommon strategic mistakes to avoid include underestimating the Skeleton Horse's fragility or relying solely on their speed advantage for exploration. Always keep a healthy supply of resources and backup plans in case something goes wrong, and be prepared to adapt your strategy if you encounter unexpected challenges. Experienced players also often use advanced techniques such as skeleton horse 'chaining,' where they create a network of connected Skeleton Horses to traverse large areas quickly.\n\nAdvanced techniques for experienced players include using the Skeleton Horse's increased jump height to access hard-to-reach areas, like high ceilings or underwater caves. Additionally, skilled players often utilize the Skeleton Horse's speed advantage in combination with other factors, such as currents or water flows, to navigate through oceanic biomes efficiently.",
+    "source": "minecraft_wiki_Mobs_Skeleton Horse",
+    "conversation_type": "gameplay_strategy",
+    "thinking": "To approach this question, let's consider the unique properties of Skeleton Horses. They have a higher jump height than regular horses, which makes them ideal for traversing tall terrain or reaching hard-to-access areas. Additionally, they can move at a faster speed when ridden underwater, making them excellent for exploring oceanic biomes. However, we also need to keep in mind that Skeleton Horses are fragile and can be easily killed by players or other hostile mobs. This means that any strategy involving Skeleton Horses should focus on minimizing risk and maximizing reward."
+  },
+  {
+    "instruction": "What's the deal with Dried Kelp drops from a mob? I've been farming them for ages, but can't seem to find any info on what they drop.",
+    "input": "",
+    "output": "tbh, mobs rarely drop dried kelp. it's usually just items like wood, bone, or nether quartz when you kill 'em. the only time u might get some is if ur playing on hardmode and a mob drops it during the day (imo, it's not worth farming for tho)",
+    "source": "minecraft_wiki_Items_Dried Kelp",
+    "conversation_type": "mob_knowledge"
+  },
+  {
+    "instruction": "I'm trapped in a cave with zombies and only have 3 hearts left, what should I do?",
+    "input": "",
+    "output": "First, move to a safe spot as fast as you can - don't fight the zombies now. If you're near water, swim or wade away until you're out of melee range. If not, find a hole or corner and barricade yourself in with dirt, wood, or anything else you can use for cover. Don't try to escape unless you have a full health bar - you'll just get picked off.\n\nNext, prioritize finding food and healing items: 2x golden apples (use any nearby crafting table), 1x water bottle, and some Blaze Powder if you have it. If not, you can make your own by smelting gold in a furnace.\n\nNow that you're safe, craft yourself some potions:\n- Golden Apple Potion x3 (fill the top slot with golden apples, add water to the middle, then add blaze powder).\n- Water Bottle Potion x1 (same as above, but no Blaze Powder needed).\n\nUse your bottles and the healing potion on yourself - drink those fast. Make sure you're fully healed before trying anything else.\n\nIf you don't have any other means of protection, grab some flint & steel from anywhere nearby (like an abandoned mine or treasure chest) and light up torches to keep those zombies back.",
+    "source": "minecraft_wiki_Brewing_Brewing Stand",
+    "conversation_type": "survival_scenarios"
+  },
+  {
+    "instruction": "Hey, I'm trying to find some Glass Pane biomes. Where can I find them and how do I navigate through them?",
+    "input": "",
+    "output": "You can find Glass Pans in villages, woodland mansions, and ancient cities. They also generate in savanna village temples, plains, and abandoned villages. To explore these areas, I recommend checking out maps of the structures or using landmarks to navigate. Just be aware that you'll need a Silk Touch enchantment to collect Glass Pans without losing any materials, as they won't drop anything when broken without it.",
+    "source": "minecraft_wiki_Blocks_Glass Pane",
+    "conversation_type": "navigation_and_biomes",
+    "thinking": "To answer this question accurately, we need to consider the article's mention of \"Glass Pane\" as a transparent block generated naturally in certain structures like villages, woodland mansions, and ancient cities. This suggests that Glass Panes might be found in areas similar to these biomes. The absence of any information about specific navigation or exploration requirements makes it seem unlikely that there's a dedicated 'Glass Pane biome' per se."
+  },
+  {
+    "instruction": "How does the Lightning Rod's lightning bolt damage work, exactly? I've seen it deal massive damage to mobs in a small area.",
+    "input": "",
+    "output": "TBH, it's pretty straightforward. The lightning rod shoots out bolts of lightning that can hit multiple mobs at once, dealing a lot of damage to them and the surrounding area. The exact damage range depends on your armor and equipment upgrades, but as long as you've got the right gear, it's a beast of a weapon. Just be careful not to get zapped yourself!",
+    "source": "minecraft_wiki_Items_Minecraft Dungeons:Lightning Rod",
+    "conversation_type": "game_mechanics"
+  },
+  {
+    "instruction": "What's a good way to use pressure plates for efficient survival in Hardcore mode?",
+    "input": "",
+    "output": "One lesser-known use for pressure plates is to create efficient item sorting systems. By placing pressure plates under chests or storage containers, you can detect when items have been added or removed, allowing you to automatically sort and organize your inventory. This can be especially useful in Hardcore mode where precious resources are hard to come by.\n\nAnother technique is to use weighted pressure plates to detect mob spawns. By placing a plate with the right amount of weight under a bed or other spawn point, you can quickly identify when a mob has spawned without having to manually check for it. This can save a lot of time and help you stay safe in Hardcore mode.\n\nWhen it comes to redstone circuits, pressure plates are often used as \" triggers\" to activate mechanisms. However, one mistake many players make is not taking advantage of the full potential of weighted pressure plates. By using weighted plates with different entity counts, you can create more complex circuitry that takes into account multiple factors like mob density or item stacks.\n\nFinally, it's worth noting that some experienced players use pressure plates to create automated farm systems for resources like food or wood. By placing a plate under a hopper or dispenser, and using the weight of items to activate the mechanism, you can create a self-sustaining system that produces the resources you need without having to manually collect them.\n\nKeep in mind that these strategies require some setup and experimentation, but they can greatly improve your chances of survival in Hardcore mode.",
+    "source": "minecraft_wiki_Blocks_Pressure Plate",
+    "conversation_type": "gameplay_strategy",
+    "thinking": "To determine an effective strategy, we need to consider how pressure plates can be used beyond just door activation and redstone power. First, let's think about the common uses of pressure plates - detecting entities, powering redstone circuits, and activating mechanisms like pistons or doors. In a Hardcore survival scenario, where resources are scarce, these uses become even more valuable."
+  },
+  {
+    "instruction": "How do I craft a crafting table?",
+    "input": "",
+    "output": "You'll need 4 wooden planks for that. Place them in a 3x3 grid on your crafting table, and it should pop up. Make sure you're facing the table when you press use to bring up the grid. Lmao, don't forget to put it in the world first!",
+    "source": "minecraft_wiki_Crafting_Crafting",
+    "conversation_type": "crafting_and_recipes"
+  },
+  {
+    "instruction": "What's a good way to keep my pigs from getting hit by lightning while I'm away, and how can I use them for more than just transportation?",
+    "input": "",
+    "output": "To minimize the risk of your pigs getting zombified by lightning, you can try building a sheltered area around their spawn location. A simple approach is to dig a 3x3 hole and fill it with water ( lava will do too). This will prevent them from being struck by lightning in most cases.\n\nFor more than just transportation, here are some non-obvious uses for pigs: breeding is an excellent way to get rare pig variants or even create new ones. To breed effectively, make sure you have a steady supply of carrots and other required food items. Also, consider building an enclosure that allows your pigs to roam freely while still keeping them safe from predators.\n\nA common mistake players make is relying too heavily on saddled pigs for transportation without properly caring for their hunger and thirst needs. This can lead to your pig dying or turning into a zombified piglin. Make sure to keep an eye on your pig's health stats, especially when it's not near its spawn point.\n\nAdvanced techniques include building 'pig corridors' that connect different biomes, allowing you to ride them across vast areas while minimizing risk of being spotted by mobs. Also, consider using pigs as \"escorts\" for your mining or exploration expeditions - they can help keep hostile mobs away from your back while you work on more challenging material.\n\nKeep an eye out for lightning storms and be prepared to move your pigs to a safe location if necessary. With the right setup and planning, pigs can become a valuable asset in your survival strategy.",
+    "source": "minecraft_wiki_Mobs_Pig",
+    "conversation_type": "gameplay_strategy"
+  },
+  {
+    "instruction": "What's the best way to get a firebrand axe from scratch, starting with basic tools?",
+    "input": "",
+    "output": "First off, you'll need some iron ingots, coal, and 3 sticks. Craft an iron sword and upgrade it to a diamond sword in the forge. Then, craft a set of iron armor (with a helmet, chestplate, leggings, and boots). With that gear, find yourself some rare drops - especially from Blaze mobs. A Fire Aspect enchantment would come in handy here.\n\n\nOnce you've got that, smelt 6 irons to get 6 iron ingots. Craft an axe with the firebrand blueprint (2x iron ingots, 1x coal). That's a decent combo, but you can make it better by upgrading your axe with a Netherite upgrade. You'll need some obsidian and nether quartz for that.\n\n\nAlternative path: If you're already rocking Diamond gear and have access to Blaze drops, skip the iron upgrades and go straight for Fire Aspect on your diamond sword. Smelt those irons and craft the firebrand axe as usual.\n\n\nFor efficiency, focus on collecting Blaze mobs in areas like The Nether Fortress or Strongholds. You can also farm them in Hardcore mode, but that's a whole different story.",
+    "source": "minecraft_wiki_Items_Minecraft Dungeons:Firebrand",
+    "conversation_type": "resource_chains"
+  },
+  {
+    "instruction": "What's up with the elder guardian ghost? I spawn it using the /summon command, but when I'm underwater, it sinks down to the bottom of the ocean. Why does that happen?",
+    "input": "",
+    "output": "AFAIK, in Bedrock Edition, the Elder Guardian Ghost will slowly sink downward if spawned underwater, passing through all blocks until it eventually falls into the void and dies. It can't rotate its body or swim while sinking.",
+    "source": "minecraft_wiki_Mobs_Elder Guardian Ghost",
+    "conversation_type": "game_mechanics"
+  },
+  {
+    "instruction": "I'm new to Minecraft and I keep running out of materials for crafting. What are some effective strategies for gathering resources that I can use in survival mode?",
+    "input": "",
+    "output": "For survival efficiency, I recommend starting by crafting a simple shelter, such as a wooden hut or a dirt house, and then expanding into more complex builds. Use your early-game gathering trips to focus on acquiring essential resources like food, water, and building materials. tbh, one of the most underrated ways to gather resources is by using buckets to fill up oceanic pools - it's a great way to collect seawater without having to dig trenches.\n\nWhen crafting recipes with shapeless recipes, always keep an eye out for opportunities to \"move\" ingredients around in creative ways. For example, when brewing potions, try placing reagents on the left or right side of the cauldron instead of centering them - it can save you a lot of time and effort in the long run.\n\nLastly, remember that experience is key! As you progress through Minecraft, you'll naturally develop an intuition for resource gathering and crafting strategies. Experiment with different approaches, keep learning, and most importantly, have fun!",
+    "source": "minecraft_wiki_Crafting_Crafting",
+    "conversation_type": "gameplay_strategy",
+    "thinking": "To gather resources efficiently, it's essential to start by familiarizing yourself with the game's biome diversity. Certain biomes provide unique materials, such as desert sand or oceanic shells, which can be exploited for crafting purposes. Additionally, learning how to prioritize resource gathering tasks is crucial - focusing on basic materials like wood, stone, and coal can help streamline the crafting process."
+  },
+  {
+    "instruction": "How do I craft Fermented Spider Eye?",
+    "input": "",
+    "output": "TBH, it's a pretty simple brew. You'll need 1 Spider Eye and 1 Sugar. Place them in the Brewing Stand, and you're good to go. Lmao, don't mess this up - just make sure your Sugar is powdered and your Spider Eye is fully fermented.",
+    "source": "minecraft_wiki_Brewing_Fermented Spider Eye",
+    "conversation_type": "crafting_and_recipes"
+  },
+  {
+    "instruction": "Hey Slab, I'm having trouble deciding whether to keep Lukas's Journal or return it to him. Can you give me some tips on how to use this item effectively for survival?",
+    "input": "",
+    "output": "Afaik, one of the most underutilized uses for Lukas's Journal is as a reference for exploring new biomes or dimensions. Since Lukas mentions visiting various biomes, it's possible to use his journal to gather information about these areas before venturing into them. For example, Jesse could flip through Lukas's Journal to learn about unique features, mobs, or resources found in different biomes.\n\nTo leverage the journal for survival efficiency, consider using it as a makeshift \"wikipedia\" for exploring new content. Jesse can quickly scan Lukas's Journal to gather intel before deciding which path to take. Additionally, since Lukas considers Jesse his main hero, having the journal can provide an emotional boost when faced with challenging situations.\n\nCommon strategic mistakes to avoid include underestimating the importance of Jesse's relationships or getting too attached to the journal. If Jesse fails to treat Slab nicely (by calling them a \"big lug\"), they won't recover Lukas's Journal, and it could become a liability. On the other hand, if Jesse keeps the journal but doesn't use its information effectively, they might end up in a tough spot.\n\nAdvanced players often use Lukas's Journal to create complex storytelling arcs or roleplaying scenarios within their adventures. For example, Jesse can write alternate endings or even compose messages from Lukas himself. This creative approach can make exploration more engaging and immersive, adding an extra layer of depth to the gameplay experience.",
+    "source": "minecraft_wiki_Items_Minecraft Story Mode:Lukas' Journal",
+    "conversation_type": "gameplay_strategy",
+    "thinking": "First, I need to understand the context of using Lukas's Journal in different scenarios. It seems that Jesse's treatment of Slab determines whether the journal is returned to Lukas. This suggests that there are pros and cons to keeping or returning the journal, depending on how Jesse interacts with Slab. Considering the item's history and Lukas's thoughts about Jesse, I should think about how Jesse's behavior can impact survival in different situations."
+  },
+  {
+    "instruction": "I'm trapped in a cave with zombies and only have 3 hearts left. What should I do?",
+    "input": "",
+    "output": "First, get outta there ASAP - sprint away from those zombies as fast as you can. If you have any potions of healing, drink one to try and patch up your health. Next, find some safe water source (you can use a bucket or just drink directly from a stream) to rehydrate.\n \nCreate a brewing stand using 4 sand blocks and 1 stick, then add 1 glass panes on top. \n Brew an extended potion of regeneration with 2 nether wart, 1 bottle of water, and 1 golden carrot - this should give you a temporary boost. Now, head for the nearest village - zombies can't follow you there.",
+    "source": "minecraft_wiki_Brewing_Brewing",
+    "conversation_type": "survival_scenarios"
+  },
+  {
+    "instruction": "What biome does Beast Boy spawn in?",
+    "input": "",
+    "output": "tbh, the exact biome isn't well-defined since the feature was removed from the game, but it's possible Beast Boy spawned in a default biome. However, its behavior is similar to Human mobs, which can spawn anywhere in the Overworld. If you're trying to find one, I'd recommend exploring the world without any specific biome in mind, and see if you can stumble upon one by chance!",
+    "source": "minecraft_wiki_Mobs_Beast Boy",
+    "conversation_type": "navigation_and_biomes",
+    "thinking": "Since Beast Boy is described as a passive mob that can be found in Java Edition Indev 0.31, I'm going to look into what features or biomes were present during that time period."
+  },
+  {
+    "instruction": "I'm trapped in a cave with zombies and only have 3 hearts left, what should I do?",
+    "input": "",
+    "output": "TBH, get outta there ASAP! Use your last 4-6 obsidian blocks to create a wall or gate - that'll give you some cover from the mobs. Grab whatever resources are within reach, like any nearby minerals or food. Don't bother trying to craft anything for now; your priority is survivability. If you can find a way out of the cave, do so immediately. Lmao, don't worry about exploring for loot - your life is more valuable than some precious gems.",
+    "source": "minecraft_wiki_Blocks_Place Block",
+    "conversation_type": "survival_scenarios"
+  },
+  {
+    "instruction": "What happens when I break a minecart with command block?",
+    "input": "",
+    "output": "A minecart with command block can be broken like any other minecart, but only the minecart itself is retained - the command block is lost.",
+    "source": "minecraft_wiki_Items_Minecart with Command Block",
+    "conversation_type": "mob_knowledge"
+  },
+  {
+    "instruction": "How do I get my hands on a Butterfly Crossbow?",
+    "input": "",
+    "output": "TBH, they're pretty rare. You can find one in the Redstone Mines or Highblock Halls Adventure modes on difficulty 3-5 (afaik). If you're having trouble finding one, try farming the daily trials for Windswept Peaks; it's the only DLC where it's available. Good luck, and don't get discouraged if you don't get one right away!",
+    "source": "minecraft_wiki_Items_Minecraft Dungeons:Butterfly Crossbow",
+    "conversation_type": "mining_and_resources"
+  },
+  {
+    "instruction": "Hey, I'm starting a new world and I need to get my hands on some crafting tables ASAP. What's the most efficient way to craft one from scratch?",
+    "input": "",
+    "output": "First off, you'll want to gather your starter materials - oak logs (you can find those by punching trees) or wood planks if you've got access to a carpenter's tools. Craft 4 wooden planks using the crafting grid in your inventory.\n\nNext up, craft a crafting table itself from one of these planks (it takes no specific pattern). Now that you have a crafting table, use it to craft some sticks and then craft an axehead. You can get those sticks by breaking down any wood item on the crafting table (like a log or a wooden plank).\n\nWith your new axe, chop down trees for more logs (again, just punch them till they break). Once you've got enough logs, re-craft planks, and then repeat the process to craft another crafting table. You'll be in no time.\n\ntbh, using axes is the fastest way to gather materials - it takes some practice but once you get the hang of it, you can chop down trees much faster than breaking them apart manually. If you don't have access to logs or want a different resource, feel free to experiment with other materials, but that's how I started out.\n\nBy the way, if you're new here, this might be an overkill for some beginners - just remember there are plenty of guides online on how to get crafting tables from scratch.",
+    "source": "minecraft_wiki_Crafting_Crafting Table",
+    "conversation_type": "resource_chains"
+  },
+  {
+    "instruction": "I'm trapped in a cave with zombies and only have 3 hearts left, what should I do?",
+    "input": "",
+    "output": "Grab your diamond sword and start clearing a path through the zombies. Once you've made it out of the cave, swim as quickly and safely as possible towards the nearest body of water. Use any nearby fish or food items to eat, like raw salmon or cooked cod, to restore some health points. If you see dolphins in the area, try to find one that's not attacking and use its speed boost to get away from the zombies faster.",
+    "source": "minecraft_wiki_Mobs_Dolphin",
+    "conversation_type": "survival_scenarios",
+    "thinking": "First, I need to prioritize getting out of this situation as quickly as possible. Since I don't have many health points left, I'll focus on finding an escape route or a safe place to heal. Given my current surroundings, I think my best bet is to try and find some water to use for swimming away from the zombies. With my limited resources, I should look for items that can help me swim fast enough to outrun the zombies."
+  },
+  {
+    "instruction": "Can you give me some tips on how to effectively manage my salmon resources for survival in Hardcore mode?",
+    "input": "",
+    "output": "First off, don't even think about getting rid of any salmon eggs - breeding them can be super profitable for some high-end fish recipes or trading purposes. \n\nWhen it comes to resource management, one common trap is to just sit there fishing every day in the same spot, waiting for those precious salmon to drop. Instead, I like to use water buckets on schools of fish in rivers and frozen rivers. It might take longer, but it's way safer and more efficient.\n\nAvoid using ladders or stairs when fishing in water - you'll waste so much time getting back up if something goes wrong.\n\nIf you do end up needing a school of salmon for whatever reason, make sure to get one with the right size or you won't be able to use all its fish.",
+    "source": "minecraft_wiki_Mobs_Salmon",
+    "conversation_type": "gameplay_strategy",
+    "thinking": "I need to consider non-obvious uses for salmon, such as breeding them or using them for crafting. Then, I should think about how to leverage salmon for survival efficiency by collecting them from specific biomes or using the right tools. Next, I'll identify common mistakes players make when handling salmon and try to come up with strategies to avoid those pitfalls. Finally, I should research advanced techniques used by experienced players to get an edge in Hardcore mode."
+  },
+  {
+    "instruction": "How do I get my first decorated pot from scratch using basic tools?",
+    "input": "",
+    "output": "First, you'll need to get your hands on some clay. You can mine it in a shallow pit or dig one out by hand. Once you have clay, craft a pottery shard using a furnace. Next, gather bricks and craft another pottery shard. With these two shards, create an empty decorated pot.\n\nFor the pattern, I'd recommend using the brick shard as the bottom face, since it has a solid texture that won't show through easily. You can get creative with other patterns later. Now, you need to fill this pot with items. Place a single item type in each of the first three slots (top center, top right, and back left). This will give you a basic decoration.\n\nIf you want to try a pattern like the skull and heartbreak one, I'd suggest using those two specific pottery shards for the bottom face. You can experiment with different patterns once you get more comfortable with crafting.\n\nTo get the final touch, apply a single item type to the side of your pot facing towards you (the 2nd slot). This will determine the top texture on your finished decorated pot. \n\nKeep in mind that using non-standard materials like items with patterns won't work as intended. Also, be aware that if you destroy the pot, it'll drop its contents - so handle them carefully.\n\nA pro tip: If you're feeling lazy, try using commands to create the pattern. Just remember to do your research and understand what's safe in Creative mode before messing around with code.\n\nIf you're not into crafting patterns from scratch, consider finding a tutorial or watching an experienced player build one for inspiration.",
+    "source": "minecraft_wiki_Blocks_Decorated Pot",
+    "conversation_type": "resource_chains"
+  },
+  {
+    "instruction": "Can you tell me where I can find gray dye and how to get it?",
+    "input": "",
+    "output": "You can usually find gray dye by buying 3 of 'em from wandering traders in Bedrock Edition. Alternatively, Journeyman villagers will sell 'em to you if they're in a good mood, tbh.",
+    "source": "minecraft_wiki_Items_Gray Dye",
+    "conversation_type": "navigation_and_biomes"
+  },
+  {
+    "instruction": "How do I craft polished blackstone bricks?",
+    "input": "",
+    "output": "You'll need 4 blackstone blocks and a crafting table. Place all 4 blackstone blocks in the top-left, middle-left, bottom-left, and top-right slots of the crafting grid. Use this polished block to craft polished blackstone bricks.",
+    "source": "minecraft_wiki_Blocks_Polished Blackstone",
+    "conversation_type": "crafting_and_recipes",
+    "thinking": "To craft polished blackstone bricks, we need to start by finding a source of polished blackstone. It can be obtained from bastion remnants or ruined portals in the Nether, but let's focus on a more accessible method since that might not be feasible for all players. Next, we'll assume we have some blackstone; if not, we'll look into how to get it from blackstone blocks (which is a separate crafting process). Since polished blackstone bricks require chiseled polish, we need to either have polished blackstone or create it from blackstone. Considering our goal, let's aim for the former."
+  },
+  {
+    "instruction": "What biome does this opacity thingy apply to? How do I find it?",
+    "input": "",
+    "output": "TBH, the transparency/opacity stuff affects a bunch of biomes. You'll usually find it in forests, especially when leaves are opaque (fast graphics). If you're having trouble finding them, try exploring around trees with lots of foliage. Opacity also plays a role in how water and lava behave, so be careful navigating through those areas!",
+    "source": "minecraft_wiki_Mechanics_User:Joabroyt/sandbox/Opacity",
+    "conversation_type": "navigation_and_biomes"
+  },
+  {
+    "instruction": "Hey, I'm having trouble understanding how blocks of redstone work. Can you explain how it powers pistons and mechanisms?",
+    "input": "",
+    "output": "TBH, it's pretty straightforward - a block of redstone powers adjacent mechanisms (like doors or lamps) facing away from itself, as long as they're powered by redstone dust above or below the block. Pistons, however, are special case; they need a direct power source right in front of them to activate.",
+    "source": "minecraft_wiki_Mechanics_Block of Redstone",
+    "conversation_type": "game_mechanics"
+  },
+  {
+    "instruction": "Where can I find a witch hut biome? I've been exploring for hours and can't seem to find one.",
+    "input": "",
+    "output": "Witch huts usually spawn in swamp biomes, so try searching those out. You'll know you're in the right area when you see some water and plenty of mud. Once you spot a witch hut, just walk up to it and interact with the door. It's probably occupied by a villager or two, but sometimes they give away useful stuff. Keep an eye out for any note blocks near the entrance, those can be pretty valuable too.",
+    "source": "minecraft_wiki_Crafting_Crafting Table",
+    "conversation_type": "navigation_and_biomes"
+  },
+  {
+    "instruction": "I'm trapped in a cave with zombies and only have 3 hearts left. What should I do?",
+    "input": "",
+    "output": "TBH, u gotta prioritize eva! Grab an Ender Pearl ASAP & brew 2-3 stacks of Regeneration Potion; grab a few stacks of Potions of Healing too. Then, use Blaze Powder to fuel your brewing stand. Get those potions brewing & heal up as fast as u can. Fill up ur health bars with healing potion & then make some Regen potions to stay topped off.",
+    "source": "minecraft_wiki_Brewing_Brewing Stand",
+    "conversation_type": "survival_scenarios"
+  },
+  {
+    "instruction": "How do I get elytra drops from an end ship?",
+    "input": "",
+    "output": "To get Elytra drops from an End Ship, you'll need to find one of these ships in a Stronghold's End dimension. Inside the treasure room, located in item frames, there's usually a shulker guarding the Elytras and two loot chests. You can enchant or repair your Elytras at an anvil using Phantom Membranes once they're broken.",
+    "source": "minecraft_wiki_Items_Elytra",
+    "conversation_type": "mob_knowledge"
+  },
+  {
+    "instruction": "Can you tell me how to craft a crafting table and a torch using only wood?",
+    "input": "",
+    "output": "Yeah, that's how you do it! Three wooden planks arranged in an \"L\" shape will give you a crafting table. For a torch, just place two sticks in the center square of your 2x2 grid - not too hard, tbh.",
+    "source": "minecraft_wiki_Crafting_Crafting",
+    "conversation_type": "mob_knowledge",
+    "thinking": "The player needs to use a 2x2 crafting grid. For a crafting table, they need to arrange 3 wooden planks in an \"L\" shape on the grid. To get a single torch, they can craft it by arranging two sticks in the middle of a 2x2 grid."
+  },
+  {
+    "instruction": "I'm trapped in a cave with zombies and only have 3 hearts left. What should I do?",
+    "input": "",
+    "output": "Grab a few bottles of water, brew a potion of Healing if you have any nether wart and some water, then drink it to restore 4 hearts. If you don't have those ingredients, try brewing a Splash Potion of Regeneration using Blaze Powder (3x) and Water Bottle (1x). Throw the splash at yourself to heal 2 hearts for now. Look for an exit and focus on getting out of there - stay alert!",
+    "source": "minecraft_wiki_Brewing_Brewing",
+    "conversation_type": "survival_scenarios",
+    "thinking": "Okay, so the player's in a tight spot - they need to get out of there ASAP. First, let me think about what's available in this situation... They've got basic survival items like food, water, and possibly some tools. Since zombies are the immediate threat, we should prioritize protection over health regeneration. I'm thinking brewing could be our best friend here..."
+  },
+  {
+    "instruction": "How do I get my hands on a Baby Turtle from scratch using basic tools?",
+    "input": "",
+    "output": "Alright, so you wanna be turtle dad? First off, you're gonna need some coal ore to craft a crafting table. Then, use that to smelt some iron ore into ingots. Next, build a furnace and smelt more iron for the armor pieces - 3 iron bars for the chestplate and leggings, and 2 for the helmet. With those in hand, find a few obsidian blocks, craft a pickaxe, and start mining deep into the earth. Once you hit the stone age layer, dig yourself some obsidian and use it to craft a bucket. Use that bucket to fill up a water source, then dig yourself an empty bucket again (you'll know it when you see it). Place that second bucket near your spawn point, then light the nearby dirt blocks with flint & steel until you get lava pools. Now, go back to your stone age layer and start mining for diamonds - you'll need about 12 of those. Once you've got 'em, craft a diamond sword, shield, and armor set (4 diamonds total). With that gear in hand, venture into the Nether and build a Nether portal using obsidian blocks. Then, find yourself some Ghast tears and use them to brew a potion of healing - 5 Ghast tears for the recipe. Now, head back to your spawn point, drink the potion, and... boom! Your Baby Turtle should be spawned right next to you. If you're feeling lazy, you can just buy the Baby Turtle from the in-game shop using emeralds.",
+    "source": "minecraft_wiki_Items_Minecraft Dungeons:Baby Turtle",
+    "conversation_type": "resource_chains"
+  },
+  {
+    "instruction": "How do bees work in Minecraft?",
+    "input": "",
+    "output": "Bees pollinate flowers by flying over them. They carry pollen, which they drop to fertilize plants. Bees can be given a flower to enter \"love mode\" and pair up, creating baby bees. The parent bees have a cooldown before breeding again.",
+    "source": "minecraft_wiki_Mobs_Bee",
+    "conversation_type": "game_mechanics"
+  },
+  {
+    "instruction": "I'm trapped in a cave with zombies and only have 3 hearts left, what should I do?",
+    "input": "",
+    "output": "TBH, stay calm and prioritize your health. You'll need to find some medical supplies ASAP. I'd suggest heading towards the nearest village (if you're far enough) or try to craft some bandages using a flower and water. To craft bandages, open your recipe book and search for \"bandage\" in the search bar. Click on it, then shift-click to add all required materials (flower, 4x water) to the crafting grid. If you have those ingredients, craft 3-4 bandages, then apply one to each of your wounds. This should help stabilize your health. Stay close to a light source and keep an eye out for zombies; I'm sure you can make it back to safety once you've got your health up.",
+    "source": "minecraft_wiki_Crafting_Recipe Book",
+    "conversation_type": "survival_scenarios"
+  },
+  {
+    "instruction": "I've got 3 hearts left and I'm trapped in a cave with zombies, how do I survive?",
+    "input": "",
+    "output": "Don't panic, just focus on getting outta there. Use your sword to take down those zombies, aim for their heads. If you're low on health, try to lure them away from each other and pick 'em off one by one. If you have a few stacks of arrows, use those to keep them at bay while you heal up.\n\nAssuming you don't have any healing potions or the same mob as Steve (not that it matters much), your next priority is finding a safe way outta this cave. Look for a light source or torches on the walls - they can help deter mobs and give you a bit more time to think. If you see an exit, make sure it's clear of zombies before attempting to leave.\n\nIf you don't have any food or if your hunger's getting low, find some mobs like cows or pigs (they're usually pretty docile) and try to get what little they can give you without risking a mob fight. Finally, if you're really struggling, consider making for that nearest village - they'll likely have more resources and help available.\n\nJust remember, your priority's getting out alive, so don't worry too much about finding all the resources right now.",
+    "source": "minecraft_wiki_Mobs_Steve (mob)",
+    "conversation_type": "survival_scenarios"
+  },
+  {
+    "instruction": "How do I craft a giant enderman?",
+    "input": "",
+    "output": "Since the article doesn't provide a crafting recipe for a standard Giant Enderman, it's likely that this item was unique to the story mode storyline and not intended for players to craft. You won't be able to craft one through regular means.",
+    "source": "minecraft_wiki_Mobs_Minecraft Story Mode:Giant Enderman",
+    "conversation_type": "crafting_and_recipes",
+    "thinking": "To craft a giant enderman, we need to recall that they were created by Romeo for Minecraft: Story Mode - Season Two. This suggests that it's not a standard item. Let me check the crafting recipe... Ah yes, according to the article, there isn't a specific crafting recipe listed for a giant enderman. However, I can tell you that a similar entity is the giant Enderman variant created by Romeo in the game."
+  },
+  {
+    "instruction": "I'm trapped in a cave with zombies and only have 3 hearts left. What should I do?",
+    "input": "",
+    "output": "TBH, your priority is to get outta there ASAP. You'll need to find or craft some healing potions ASAP. If you don't have any brewing equipment, head to the nearest village and try to trade for some melon slices - they're cheap and can be used to make a basic Healing Potion. You'll need 3 melon slices (afaik), so get those 3 glistering melon slices from Master-level villagers if you can. Once you've got your ingredients, brew 2-3 Healing Potions and drink 'em - they're not gonna save your life but it's worth a shot. If you're lucky, you might even find some Golden Apples or Carrots in that village to add to your inventory. Stay close to the villagers, lmao don't wanna see you get mobbed by zombies!",
+    "source": "minecraft_wiki_Brewing_Glistering Melon",
+    "conversation_type": "survival_scenarios"
+  },
+  {
+    "instruction": "How do I kill an Undead mob?",
+    "input": "",
+    "output": "Undead mobs are immune to Healing potions, take damage from Harming potions, and aren't affected by Poison or Regeneration potions. Drinking a Luck potion won't affect the Undead mob's behavior.",
+    "source": "minecraft_wiki_Brewing_Brewing",
+    "conversation_type": "mob_knowledge"
+  },
+  {
+    "instruction": "How do I get a recipe book to show up for crafting recipes?",
+    "input": "",
+    "output": "You can either discover recipes by using them, or have them automatically added when you complete an advancement in vanilla survival. Recipes will only appear if you're using the recipe book in a block associated with that type, like a furnace or crafting table.",
+    "source": "minecraft_wiki_Crafting_Recipe",
+    "conversation_type": "game_mechanics"
+  },
+  {
+    "instruction": "I'm trying to defeat a Strider, but it's dropping way more string than I expected. Is there a way to increase the drops or reduce them?",
+    "input": "",
+    "output": "The drops for striders can be increased with Looting III, which would allow you to potentially get up to 8 string from a single death. However, it's not guaranteed and may still drop less depending on your specific situation.",
+    "source": "minecraft_wiki_Mechanics_String",
+    "conversation_type": "mob_knowledge",
+    "thinking": "To answer this question, let's consider how striders drop string. According to the article, striders can drop 2-8 string upon death, depending on their Looting level. Since I'm not sure what my Looting level is, I'll need to check if it affects the drops in any way. I'll also make sure that I don't have any enchanted fishing rods, as they might affect the catch rate."
+  },
+  {
+    "instruction": "What's the most effective way to make items that aren't available on my inventory grid, without having to mine all over the map?",
+    "input": "",
+    "output": "First off, crafting tables are your BFF for making stuff. Not only do they give you access to recipes not in your inventory, but they're also super fast and efficient. For example, you can use a crafting table with 2 obsidian, 2 sand, and glass panes to make a polished diamond pickaxe - super handy for mining deep. \n\nAnother trick is to craft armor with a crafting table. Stack two identical items on the grid (e.g., iron armor), and voil\u00e0! You get twice the durability, with no need to enchant them. Afaik, this method's been around since beta 1.5. I used it in a survival challenge last year to make a whole set of decent gear - lmao, my arms still ache thinking about all that smelting.\n\nCommon mistake? Not using the recipe book! Make sure you check out what recipes are available on your crafting table before heading off to mine for more materials. I once spent an hour trying to get obsidian just so I could craft a sword - ouch.\n\nAdvanced players use this method for everything from making ender eyes to crafting elaborate redstone contraptions. The key is to experiment, find what works best for your playstyle, and keep practicing those recipes!",
+    "source": "minecraft_wiki_Crafting_Crafting Table",
+    "conversation_type": "gameplay_strategy"
+  },
+  {
+    "instruction": "How do I get entangle vines to spawn from corrupted seeds?",
+    "input": "",
+    "output": "To get entangle vines to spawn from corrupted seeds, use them in a mission like Overgrown Temple or Panda Plateau. When you activate the corrupted seeds, a small patch of entangled vines will appear, trapping mobs and potentially slowing down your progress.",
+    "source": "minecraft_wiki_Items_Minecraft Dungeons:Corrupted Seeds",
+    "conversation_type": "mob_knowledge",
+    "thinking": "To determine how entangle vines spawn from corrupted seeds, I'll review the article's content. It mentions that when a hero uses corrupted seeds, it summons a small patch of entangled vines which can trap mobs and other heroes for a few seconds before disappearing. Additionally, articles stating that whisperers and wavewhisperers have similar behaviors where they summon entangle vines."
+  },
+  {
+    "instruction": "How do I get lapis lazuli ore to drop more when mining it with a Fortune pickaxe?",
+    "input": "",
+    "output": "With a Fortune pickaxe, you're good to go. The drop chance increases by 2x at level II, 3x at level III, and so on up to 4x at level IV. So, theoretically, if you've got a Level III Fortune pickaxe, there's a minimum of 4 lapis lazuli dropped per chunk.",
+    "source": "minecraft_wiki_Blocks_Lapis Lazuli Ore",
+    "conversation_type": "mining_and_resources"
+  },
+  {
+    "instruction": "What are some effective strategies for creating a high-security redstone combination lock in Minecraft that can withstand attempted break-ins?",
+    "input": "",
+    "output": "For a high-security combination lock, I recommend using a 4-bit system with RS NOR latches to store the input sequence. Use multiple repeaters in series with reliable delay blocks to slow down the signal propagation. Consider adding an extra layer of security by implementing a timer-based mechanism that requires precise timing to activate the lock. To make it more difficult for others to find, hide the levers inside a secret compartment or use a trapdoor as a cover.\n\nTo further optimize performance, I suggest using a compact design with minimal signal paths and careful placement of repeaters and delay blocks. This will help prevent accidental activation and ensure that the lock is triggered only when the correct sequence is entered. Additionally, consider adding a hidden reset mechanism to prevent others from guessing the combination by trial and error.",
+    "source": "minecraft_wiki_Mechanics_Tutorials/Advanced redstone circuits",
+    "conversation_type": "gameplay_strategy",
+    "thinking": "To create an effective combination lock, I need to consider what makes it secure and how I can optimize its performance. A high-security combination lock should be difficult to guess or crack without knowing the correct sequence of inputs. It's essential to use a robust design with minimal signal paths and reliable repeater connections.\n\nOne strategy is to use a 4-bit system, where each bit can have two states: 0 or 1. This allows for more combinations to be generated, making it harder to guess. I also need to ensure that the lock has enough delay between inputs to prevent accidental activation. A good starting point could be using a timer-based mechanism with multiple repeaters and a reliable delay system.\n\nAnother aspect to consider is the physical security of the lock. Using a hidden placement for the levers, like inside a secret compartment or under a trapdoor, can make it harder for others to find and manipulate the lock."
+  },
+  {
+    "instruction": "I'm trapped in a cave with zombies and only have 3 hearts left, what should I do?",
+    "input": "",
+    "output": "Lmao, stay calm, focus on survivin'. Grab that redstone torch you got nearby and quickly build a fence around yourself using the dirt/stone blocks. Get that JK latch up ASAP - it'll help prevent zeds from reachin' ya. Once it's built, activate it to block any entry points. Then, start diggin' for resources (stick to obsidian or diamond tools) and prioritize findin' food/drink items like golden apples or water bottles. If you got an empty bucket, grab some lava and brew a potion of regeneration - it'll help ya survive this ordeal tbh.",
+    "source": "minecraft_wiki_Mechanics_Redstone circuits/Memory/JK Latch A",
+    "conversation_type": "survival_scenarios"
+  },
+  {
+    "instruction": "Can you tell me how to craft a Double Extender 2 with Pistons and Re Repeaters? I've got all the materials but I'm having trouble getting it right.",
+    "input": "",
+    "output": "Yeah, gotta make sure that top piston doesn't move, or the whole thing falls apart. Using the correct delay settings and crafting pattern should do the trick. If you're still having trouble, lmao, try checking your math for those repeater delays - it's easy to mess 'em up!",
+    "source": "minecraft_wiki_Mechanics_Redstone circuits/Piston/Double Extender 2",
+    "conversation_type": "crafting_and_recipes",
+    "thinking": "Alright, so we're looking at the recipe for the Piston-safe Double Extender. From what I understand, this item requires two repeaters in sequence with specific delay settings. According to the wiki article, the correct quantities are three Pistons and three Re Repeaters, each with a total delay of 4, 8, 2, and 6 ticks respectively. This pattern should look like:\n\n 4 8 2 6 \n|       |\n3 8    2\n|       |\n1 ------\n\nThe crafting station is standard stone or dirt blocks. No special requirements here.\n\nCommon mistakes to avoid are misplacing the Pistons in a way that activates the upper piston, and double-checking the repeater settings for accuracy.\n\nFor an alternative method, it's possible to use a different type of repeater, like Redstone Repeaters with less delay, but this might not be as efficient. TBH, using the standard Re Repeaters should give you a good balance between speed and stability."
+  },
+  {
+    "instruction": "What's up with the Highland Armor, does it have any special abilities?",
+    "input": "",
+    "output": "TBH, it's got a pretty sweet setup. It gives you 35% damage reduction and +30% melee damage, which is solid for most fights. But what's really cool about it is that when you dodge an attack, your speed increases. That Swiftfooted tier I buff is game-changer, trust me - I've worn this armor in some tough Gauntlet of Gales runs and it definitely made the difference!",
+    "source": "minecraft_wiki_Items_Minecraft Dungeons:Highland Armor",
+    "conversation_type": "game_mechanics"
+  },
+  {
+    "instruction": "\"Hey bot, I've been having trouble optimizing my brewing stand setup for survival. I've got a few brewing stands scattered around my base, but I'm not sure how to make the most of them. Can you share some tips on effective strategies for using this resource?\"",
+    "input": "",
+    "output": "To make the most out of your brewing stand setup, I'd recommend experimenting with different fuel sources like blaze powder or even sugar and egg to create a more efficient brew cycle. Stocking multiple brewing stands with essential potions is also key - especially if you set them up in areas with easy access for emergencies.\n\nUsing Instant Health II potions as part of complex recipes can give us a huge advantage, so try combining them with other ingredients to create powerful elixirs or regeneration potions on the go. When setting up your brewing stand job site blocks, claim them right away to gain villager experience and improve their professions - this will make managing your villagers much easier.\n\nTo maximize efficiency, also consider using hoppers to funnel resources into brewing stands. And keep in mind that brewing stands always face east by default - so if you need a potion or an ingredient quickly, place your stand facing the direction you want access from.",
+    "source": "minecraft_wiki_Brewing_Brewing Stand",
+    "conversation_type": "gameplay_strategy",
+    "thinking": "First, let's think about what we want to achieve with our brewing stands - in other words, maximizing survival efficiency. We need a way to brew potions that will help us survive longer in the game world.\n\nThinking about non-obvious uses for brewing stands... While they're primarily used for brewing potions, brewing stands can also be used as job site blocks or as a source of light. They can even catch fire from lava, which could be used to fuel other aspects of our base.\n\nNow, let's consider how to leverage brewing stands for survival efficiency. One key strategy is to set up multiple brewing stands in different areas of the base and stock them with essential potions like healing potions, regeneration potions, or protection potions. This way, we can access these potions quickly when needed. We should also experiment with different fuel sources, as some might be more efficient than others.\n\nTo avoid common strategic mistakes... One mistake I see players making is not taking full advantage of brewing stands' ability to generate potions automatically. Since they have two Instant Health II potions in their holders by default, we can use them to create more complex recipes or brew potions on the go. Another mistake would be neglecting to claim brewing stands with a villager job site block, as this gives us a chance to gain experience and improve our villagers' professions.\n\nFinally, let's think about advanced techniques that experienced players might use... One technique is using hoppers to funnel resources into brewing stands, allowing us to brew potions without manually adding ingredients. We can also preload potion recipes in our brewing stands for \"hands-free\" brewing of complex recipes or access pre-brewed potions."
+  },
+  {
+    "instruction": "How does the recipe system work, exactly? I'm trying to figure out how to get that one firework star recipe that I saw someone else craft.",
+    "input": "",
+    "output": "tbh, it's not super complicated - recipes are just data-driven config files. They're stored in the game's resource pack and can be enabled/disabled with commands or mods. For crafting recipes specifically, you need a specific pattern (e.g., 2 diamonds and a stick) to get the desired output item. Most recipes require at least one input item and have an optional count field. Recipes for things like smelting, stonecutting, and smithing work similarly.",
+    "source": "minecraft_wiki_Crafting_Recipe",
+    "conversation_type": "game_mechanics"
+  },
+  {
+    "instruction": "Hey bot, how do I get my hands on some Underwater TNT?",
+    "input": "",
+    "output": "TBH, you're most likely gonna wanna grab some Underwater TNT from the /give command if you're on Bedrock Edition. Type `/give <playername> underwater_tnt` (without the quotes) to get 64 units of it instantly. If you're stuck with vanilla Minecraft or want a different quantity, just adjust the amount accordingly.",
+    "source": "minecraft_wiki_Mechanics_Underwater TNT",
+    "conversation_type": "mining_and_resources",
+    "thinking": "To obtain Underwater TNT, I need to access Minecraft Education or enable the \"Education\" option in Bedrock Edition. Then, I should check if it's available in my game. Since it's exclusive to Bedrock Edition and Minecraft Education, I'll make sure I'm playing with one of those editions."
+  },
+  {
+    "instruction": "What's the best way to get a Heavy Crossbow from scratch using basic tools?",
+    "input": "",
+    "output": "Start by farming Cacti Canyon or Broken Citadel for Wood and Iron Ingots. To get Slayer Crossbows, find Ancient Skeletons in those biomes or in the DLC areas like Crimson Forest or Tower Merchants Village (imo, those areas have plenty of drops). Once you have a Slayer Crossbow, go to the Merchant Gift Wrapper's item ID, 67, which is a modified version of the Doom Crossbow. You can then open it and re-enchant its crossbow material with Iron Ingots to upgrade it to a Heavy Crossbow. To save time, focus on getting Slayer Crossbows from those areas first before farming for resources in Cacti Canyon or Broken Citadel.",
+    "source": "minecraft_wiki_Items_Minecraft Dungeons:Heavy Crossbow",
+    "conversation_type": "resource_chains",
+    "thinking": "To acquire a Heavy Crossbow, I need to gather rare materials. Since it has a Power of 14, I'll start by finding resources for the Quiver and Fire Rate components. The Quiver requires Wood (20) in a grid pattern of 2x3 on the crafting table. Meanwhile, the Fire Rate depends on getting Iron Ingots (at least 10). A Slayer Crossbow has an ID of 64, which means I'll need to gather materials to craft it first and then modify it into a Heavy Crossbow. The Doom Crossbow variant also uses similar resources."
+  },
+  {
+    "instruction": "What's up with piglins and glistering melon slices? Do I need to get rid of them or something?",
+    "input": "",
+    "output": "tbh, piglins are pretty attracted to glistering melon slices. just drop 'em on the ground and they'll find it and collect it in 6-8 seconds. no need to do anything extra.",
+    "source": "minecraft_wiki_Brewing_Glistering Melon",
+    "conversation_type": "mob_knowledge"
+  },
+  {
+    "instruction": "What's up with all the extra effects that last longer when I throw a Lingering Potion onto lava?",
+    "input": "",
+    "output": "tbh, it can be kinda powerful like that. The cloud's duration is 1/4 of the potion's original duration, but some effects have additional factors, like healing or regenerating health. So if you're throwing a Healing II into lava, for example, it might end up lasting way longer than if you just threw a regular splash potion.",
+    "source": "minecraft_wiki_Brewing_Lingering Potion",
+    "conversation_type": "mob_knowledge"
+  },
+  {
+    "instruction": "How do I get glow lichen with shears?",
+    "input": "",
+    "output": "To craft glow lichen with shears, you'll need one shears and an unlimited number of glow lichens will be obtained, as it breaks them all.",
+    "source": "minecraft_wiki_Blocks_Glow Lichen",
+    "conversation_type": "crafting_and_recipes",
+    "thinking": "To obtain glow lichen with shears, we need to recall that shears are the only tool capable of breaking and obtaining glow lichen. Since bone meal is required to spread glow lichen naturally, fertilizing one lichen won't directly provide an immediate solution for crafting it with shears. However, it's worth noting that using bone meal causes glow lichen to spread to a random adjacent block if possible. In contrast, shears can break and obtain a single glow lichen at a time without the need for bone meal or spreading."
+  },
+  {
+    "instruction": "What's the deal with bread mobs? Can I tame them?",
+    "input": "",
+    "output": "Bread mobs don't exist in Minecraft Dungeons; they're just a common item found by defeating mobs and opening chests.",
+    "source": "minecraft_wiki_Items_Minecraft Dungeons:Bread",
+    "conversation_type": "mob_knowledge",
+    "thinking": "To determine if bread mobs can be tamed, I'll check the Minecraft Dungeons article on food items. According to the text, bread is a consumable item that heals health over time and isn't mentioned as being tamable or having any behavior related to mobs."
+  },
+  {
+    "instruction": "What's the most efficient way to get iron ingots from scratch without relying on other players, using basic tools only?",
+    "input": "",
+    "output": "First off, you'll need to start by smelting coal in a furnace. Gather 3-4 blocks of coal and place them in a furnace with 1 stack of cobblestone (for fuel). This will take about 10 seconds. Once the coal is fully smelted, remove the smelted coal and use it as fuel for your next step.\n\nFor iron ingots, you'll need to smelt iron ore using another furnace. You can find iron ore by mining deep into a cave or ravine. Mine at least 5-7 blocks of iron ore to be safe. Place the iron ore in the furnace with cobblestone (as fuel), and repeat the smelting process, just like with coal.\n\nNow that you have your first stack of smelted iron, take it out and use one block as fuel for your next furnace run. Mine more iron ore and repeat the smelting process, but this time, remove the remaining iron ore (it'll still be in your inventory). Keep doing this until you've smelted enough to create at least 3-4 stacks of iron ingots.\n\nIf you want to speed up the process, consider building a blast furnace with a fuel source other than coal. This will save time but requires more setup and materials upfront.\n\ntbh, the trickiest part is waiting for all that smelting to finish. But if you're patient and do your research, crafting iron ingots shouldn't be too hard.",
+    "source": "minecraft_wiki_Crafting_Recipe",
+    "conversation_type": "resource_chains"
+  },
+  {
+    "instruction": "How do I get more anvil resources to repair my iron tools in Minecraft?",
+    "input": "",
+    "output": "To acquire experience levels, you can try exploring or fighting mobs. You can also obtain materials by breaking or trading with other players. Note that Experience levels are not a direct resource, but rather a measure of progress in the game; you cannot directly harvest them like blocks.",
+    "source": "minecraft_wiki_Mechanics_Anvil mechanics/Before 1.8",
+    "conversation_type": "mining_and_resources"
+  },
+  {
+    "instruction": "How can I get my hands on some leaves2 blocks with damage values of 6-15? Is it even possible to obtain them?",
+    "input": "",
+    "output": "Yeah, tbh, getting leaves2 blocks with damage values of 6-15 is super hard. The only way to get them is by transmuting an acacia leaf into a leaves2 block with a specific metadata value (2 or 3) using arrows. You can't just mine them from the ground; you need to use this transmutation trick, which requires some setup, like having an old tree in a dedicated transmutation apparatus.",
+    "source": "minecraft_wiki_Items_Invalid Data Value Leaves2",
+    "conversation_type": "mob_knowledge",
+    "thinking": "The article mentions that block transmutation with arrows can be used to obtain leaves2 blocks with metadata 2 and 3. Since these damage values are outside the usual range, I need to find out if there's a specific way to obtain those variants. Additionally, it seems like the removal of distinguishing between block and item variants using metadata and damage might affect this."
+  },
+  {
+    "instruction": "Can someone help me find trapped chests in a woodland mansion? I've been searching for hours but can't seem to locate one.",
+    "input": "",
+    "output": "Woodland mansions are pretty easy to spot - they're like fake end portal rooms. Just look for a structure with a big, ornate door and some glowing eyes (that's the mansion's glowstone). Once you find it, check out the surrounding area for \"fake end portals\". They usually have a chest or two in them. TBH, just keep an eye on your surroundings and you'll probably stumble upon one pretty soon.",
+    "source": "minecraft_wiki_Blocks_Trapped Chest",
+    "conversation_type": "navigation_and_biomes"
+  },
+  {
+    "instruction": "Can I tame a redstone comparator?",
+    "input": "",
+    "output": "No, you cannot tame a redstone comparator. It's an inanimate block that can be broken instantly with any tool or by hand, and it doesn't have a taming process like some other mobs. However, it's great for various redstone contraptions!",
+    "source": "minecraft_wiki_Mechanics_Redstone Comparator",
+    "conversation_type": "mob_knowledge"
+  },
+  {
+    "instruction": "How do I craft a rail?",
+    "input": "",
+    "output": "To craft a rail, you'll need 16 stone blocks. Place 16 stone blocks in a square grid pattern on your crafting table, and the rails will appear at the center of the grid.",
+    "source": "minecraft_wiki_Mechanics_Rail",
+    "conversation_type": "crafting_and_recipes",
+    "thinking": "To craft a rail, we need to recall that rails are made of stone or other solid blocks. We also know that rails can be dropped from mined blocks, but since this is a crafting question, we're likely looking for a method to obtain them directly. Given the information about rails being non-solid blocks and requiring quick tools like pickaxes, I'm going to take a guess that a rail can be crafted using a stone or other solid block."
+  },
+  {
+    "instruction": "Can I tame a skeleton in Minecraft?",
+    "input": "",
+    "output": "No, you cannot tame a skeleton in Minecraft. They're undead mobs with unique behavior towards potions. Using healing potions won't help, and harming potions might even harm you.",
+    "source": "minecraft_wiki_Brewing_Brewing",
+    "conversation_type": "mob_knowledge",
+    "thinking": "Since skeletons are undead mobs, they react differently to potions compared to other mobs. Specifically, they take damage from healing potions and gain health from harming potions. Given this behavior, it's unlikely that a skeleton can be tamed using regular means."
+  },
+  {
+    "instruction": "How do I find bamboo biomes in Minecraft?",
+    "input": "",
+    "output": "TBH, they're not super common. You'll usually find 'em in jungle biomes, but sparse jungles don't generate bamboo stalks at all. If you're looking to farm it, just spawn a new world and start exploring \u2013 the bamboo generates randomly across the map.",
+    "source": "minecraft_wiki_Items_Bamboo",
+    "conversation_type": "navigation_and_biomes"
+  },
+  {
+    "instruction": "How do I use a note block to make allays drop collected items near it?",
+    "input": "",
+    "output": "You can use a note block to direct allays by powering it with redstone. Once an allay hears the note, it'll try to pathfind to the note block and spend 30 seconds around it, collecting and returning items. Make sure there's air above the note block for it to play the sound.",
+    "source": "minecraft_wiki_Mechanics_Note Block",
+    "conversation_type": "mob_knowledge"
+  },
+  {
+    "instruction": "How do I find desert villages and ride camels?",
+    "input": "",
+    "output": "Desert villages can be found in the desert biome, which appears as a sandy or rocky terrain. To locate one, look for a cluster of sandstone structures with a few cacti scattered around. Once you've spotted a village, follow the path leading to it and keep an eye out for camels roaming around. They'll typically spawn in the center of each village, so make sure to saddle up and ride them while they're available!",
+    "source": "minecraft_wiki_Mobs_Camel",
+    "conversation_type": "navigation_and_biomes"
+  },
+  {
+    "instruction": "Hey bot, I'm trying to survive on Hardcore mode and I've heard that Old D Latch Ds are super useful for memory storage. What are some creative ways to use them that aren't just storing items?",
+    "input": "",
+    "output": "TBH, they're way more versatile than people give 'em credit for. You can also use them as a makeshift music box \u2013 just set up a CD with a Redstone trigger and you've got a sweet musical loop going on. And if you're feeling fancy, try using an Old D Latch D to create a simple timer for brewing potions or crafting items.\n\nOne thing to keep in mind is that you don't wanna overload the latch with too many inputs, or it'll just freeze up on you. Afaik, 3-4 levels of input is the sweet spot before things start getting wonky. Another pro tip: when using an Old D Latch D for memory storage, try to keep the data organized into blocks \u2013 easier to manage that way.\n\nOn the flip side, there are some common mistakes you should avoid when working with Old D Latches. Don't be tempted to overload them with too much Redstone power \u2013 it'll fry 'em in no time. And whatever you do, don't try to use one as a makeshift switch for a piston or an ender pearl trap. That's just asking for trouble.\n\nAs for advanced techniques, experienced players swear by using Old D Latches to create complex clockwork contraptions that automate entire builds. I've seen some genius Redstone circuts that use OLd D Latches as the brain \u2013 basically, it's like having a super-intelligent Redstone calculator right in your build.",
+    "source": "minecraft_wiki_Mechanics_Redstone circuits/Memory/Old D Latch D",
+    "conversation_type": "gameplay_strategy"
+  },
+  {
+    "instruction": "Where can I find Colored Torch biomes in Minecraft Education?",
+    "input": "",
+    "output": "AFAIK, Colored Torch biomes aren't a thing in Minecraft. It's possible you're thinking of a custom map or server setup that uses this feature. TBH, it's been a while since I played Minecraft Education - I might've missed something. If you're looking for colored torches, they can be crafted from soul soil using metal chlorides, but I'm not aware of any special biomes that spawn them.",
+    "source": "minecraft_wiki_Blocks_Colored Torch",
+    "conversation_type": "navigation_and_biomes"
+  },
+  {
+    "instruction": "What's the deal with buckets? How do I fill them up with stuff?",
+    "input": "",
+    "output": "TBH, it's pretty straightforward - just right-click on a water or lava source block, a cow/mooshroom/goat, milk, powder snow, or an aquatic mob (depending on what you wanna fill 'em with), and the bucket should get filled. Just be aware that if your inventory's full, the filled bucket'll drop in front of you.",
+    "source": "minecraft_wiki_Items_Bucket",
+    "conversation_type": "game_mechanics"
+  },
+  {
+    "instruction": "Can you help me craft a firework star for my firework rocket? I have 12 blaze powder and 4 gunpowder.",
+    "input": "",
+    "output": "For a firework star, you'll need 8 blaze powder. You can't use gunpowder directly; get blaze rod instead. If you don't have it, smelt any obsidian into gold ingots and then smelt them into glowstone dust - that's the only way to make blaze powder.\n\nCommon mistakes: Don't try using gunpowder or other stuff in your recipe. That'll just mess up the whole thing.\nAlternative crafting methods: N/A",
+    "source": "minecraft_wiki_Crafting_Recipe",
+    "conversation_type": "crafting_and_recipes"
+  },
+  {
+    "instruction": "What's a good way to use Zombified Piglins for farming resources like rotten flesh and gold nuggets?",
+    "input": "",
+    "output": "Afaik, one of the lesser-known uses for zombified piglins is as \"aggro bait\" in redstone contraptions. Their ability to remain hostile even after a short forgiveness timer makes them perfect for triggering automatic mob drops or other responses.\n\n\nFor resource farming, leveraging the zombified piglin's ability to spawn in nether fortresses can be effective. A simple setup involves creating a nether portal near a fortress and placing some Nether wart blocks on either side of it. When lightning strikes within 4 blocks of the piglin spawning area, the mob will appear. You can then lure nearby mobs into attacking the zombified piglin, which will spawn and attack aggressively.\n\n\nHowever, common mistakes to avoid include leaving your base's defenses too low for the amount of aggression you're trying to provoke and failing to use proper redstone components to prevent the mob drops from triggering when an iron golem is attacked. Some experienced players also recommend using zombified piglins as part of their mob-grinding strategy, especially in conjunction with other aggressive mobs like skeletons or spiders.\n\n\nLastly, veteran players often employ a technique where they create an illusion of danger around their base by placing zombie pigmen, ghasts, and other hostile mobs near the perimeter. This will attract unwanted attention from nearby mobs, making it easier to farm resources while also protecting your base from potential threats.",
+    "source": "minecraft_wiki_Mobs_Zombified Piglin",
+    "conversation_type": "gameplay_strategy"
+  },
+  {
+    "instruction": "I'm trapped in a cave with zombies and only have 3 hearts left. I need to get out of here ASAP. What should I do?",
+    "input": "",
+    "output": "Don't panic, lmao. First, prioritize finding a safe place to escape. Look for any nearby caves or tunnels that aren't infested with zombies. If you can't find one, create a makeshift barrier using dirt blocks to block the entrance. Now, grab a nearby source of light (e.g., torches) and start moving eastward towards the nearest village. I'd say aim for at least 3-4 blocks away from your current location. If you have a bed, try to find one as well - it'll be useful for respawning if needed. Make sure you have some food and water nearby too. Lastly, consider building a quick exit by crafting an elevator or simply digging down to the surface if possible. Afaik, this should get you out of there alive.",
+    "source": "minecraft_wiki_Mechanics_Powered Rail",
+    "conversation_type": "survival_scenarios"
+  },
+  {
+    "instruction": "I'm trapped in a cave with zombies and only have 3 hearts left. What should I do?",
+    "input": "",
+    "output": "TBH, you gotta act fast. Use your diamond pickaxe to mine nearby stone or dirt blocks and create a makeshift wall to block the zombies' path. Then, find a way to get to the surface ASAP. If you don't have any food, try to craft some in your inventory - if you've got 3-4 obsidian, 1-2 of those should work for an apple recipe. Just use the \"Use Item/Place Block\" control to place it near you when it's ready. AFAIK, levers don't drop themselves, so just find a solid block and attach that sucker to it if you can - that'll give you some extra time to get outta there.",
+    "source": "minecraft_wiki_Mechanics_Lever",
+    "conversation_type": "survival_scenarios"
+  },
+  {
+    "instruction": "How do I get a Splash Potion of Fire Resistance?",
+    "input": "",
+    "output": "Afaik, you can trade for one with a Piglin if they have it. They'll give it to you when you give them 3 gold ingots.",
+    "source": "minecraft_wiki_Brewing_Splash Potion",
+    "conversation_type": "mining_and_resources"
+  },
+  {
+    "instruction": "I'm trying to optimize my resource gathering in Minecraft. What are some effective strategies for using the recipe book and crafting recipes to get an advantage in Survival mode?",
+    "input": "",
+    "output": "Aye, leveraging your recipe book can be a game-changer! Non-obvious uses include using it to craft banner patterns that blend in with your surroundings, making it harder for mobs to spot you. For example, try crafting a striped pattern using wool and white dye; it's a classic combo that'll make it hard for zombies to tell where you are.\n\nTo get the most out of your recipe book, focus on optimizing your smelting recipes. You can do this by filtering craftable recipes based on available materials in your inventory. This will save you time and resources when crafting items like iron armor or gold nuggets. Just remember to keep an eye on your inventory slots \u2013 don't overfill them with smelted ores!\n\nOne common mistake new players make is not taking advantage of the \"show craftable\" feature in their recipe book. Make sure you've got this option enabled, and use it to only view recipes that require materials you already have. This will save you from wasting time on crafting items you can't afford.\n\nAdvanced players like yourself know that crafting recipes are all about finding the right grid patterns. Experiment with different combinations of materials and shapes to find what works best for your specific needs. For example, try using a 3x3 grid pattern to craft obsidian blocks \u2013 it's faster and more efficient than trying to smelt individual pieces.\n\nFinally, don't neglect the power of right-click crafting! Instead of manually placing items in your crafting grid, use right-click to automatically craft items like gold nuggets or redstone components. It's a simple trick that'll save you time and reduce errors.",
+    "source": "minecraft_wiki_Crafting_Recipe Book",
+    "conversation_type": "gameplay_strategy"
+  },
+  {
+    "instruction": "How does a splash potion work when I throw it? Does it affect me?",
+    "input": "",
+    "output": "Yeah, tbh, it's pretty cool how splash potions work! When you throw one, it explodes on impact and affects all entities within an 8.25\u00d78.25\u00d74.25 cuboid centered on the thrown potion at impact. The farther away from the center of the impact an entity is, the less the effect will be. For instant effects like healing or harming, the potency decreases linearly with distance \u2013 100% on a direct hit, 0% at 4 blocks' distance. Other effects remain unchanged but have a decreasing duration.",
+    "source": "minecraft_wiki_Brewing_Splash Potion",
+    "conversation_type": "game_mechanics",
+    "thinking": "To understand how a splash potion works, let's break down its behavior. When a player throws a splash potion at another entity, the potion explodes on impact, applying status effects to nearby entities. This means that the effect of the potion is not just limited to the entity directly hit by it, but also to entities within a certain range around the point of impact."
+  },
+  {
+    "instruction": "Hey bot, I'm trying to make a basic IMPLY gate. What's the recipe for that?",
+    "input": "",
+    "output": "TBH, it's pretty straightforward. You'll need 4 obsidian blocks, 1 redstone torch, and 2 redstone dust. Place them in a cross pattern like this:\n\n#------#\n#     #\n#-----#\n#     #\n#------#\n\nMake sure the torch is on the bottom row. If you're having trouble getting it to work, try replacing the obsidian with dirt blocks and testing again. I learned that one the hard way back in 1.0 beta tbh.",
+    "source": "minecraft_wiki_Mechanics_Redstone circuits/Logic/IMPLIES",
+    "conversation_type": "crafting_and_recipes"
+  },
+  {
+    "instruction": "Can you tell me how to get a calibrated sculk sensor from scratch using basic tools?",
+    "input": "",
+    "output": "Alright, let's get started! First, you'll need 8 obsidian blocks to smelt into coal. Use a furnace to smelt them down - it won't take long at all. Next, craft the normal sculk sensor using those 16 coal blocks, 4 sculk shards, and 2 redstone dust. With that item in hand, head to a biome with plenty of sculk vines (like mushroom island) to find shards. You'll need about 8-10 shards for calibration, so it might take some time, but it's worth the effort.\n\nOnce you have enough shards, use your coal and redstone dust to craft the calibration block, which requires 16 blocks of coal and 4 redstone dust. With that done, you should now be able to craft a calibrated sculk sensor using 8 blocks of coal, 4 sculk shards, and 1 redstone dust.\n\nAs for getting it faster, one tip is to use an enchanted hoe to break the obsidian and coal more quickly. You can also mine those biomes with pickaxe made from diamond or netherite, which are much faster than regular materials.\n\nLastly, if you're having trouble finding sculk shards in a specific biome, consider using a redstone repeater to make the detection area bigger - it will give you more room to search without needing as many individual shards.",
+    "source": "minecraft_wiki_Mechanics_Calibrated Sculk Sensor",
+    "conversation_type": "resource_chains",
+    "thinking": "To craft a calibrated sculk sensor, I need to start by collecting obsidian. Once I have enough obsidian, I can smelt it into 8 blocks of coal and then create the base item, which is the sculk sensor without calibration. From there, I'll need to gather redstone dust and sculk shards, as well as a few other materials. The next step will be to craft the calibration block using specific quantities and types of materials, depending on my tool's durability and efficiency."
+  },
+  {
+    "instruction": "I'm trapped in a cave with zombies and only have 3 hearts left, what should I do?",
+    "input": "",
+    "output": "Lure the zombies towards any water sources you can find. If there's a nearby river or pond, try to get as close as possible without getting attacked. Use your arrows to shoot at the zombies' heads while creating distance between yourself and the mobs. Once they're all gathered near the water, you can take out a few of them with your bow if needed, but mostly just keep moving away from the area. As soon as you're safe, prioritize healing up any remaining health you may have left over using regeneration potion or a nearby source of natural resources to craft more healing items for when you need it most again in the future lmao.",
+    "source": "minecraft_wiki_Mechanics_Redstone circuits/Piston/Piston XNOR",
+    "conversation_type": "survival_scenarios",
+    "thinking": "Okay, first things first, I need to prioritize getting out of there as soon as possible. Since I only have 3 hearts left, I'll need to conserve health while making my escape. My current inventory includes a few potions (healing and regeneration), some stone and dirt blocks that could be used for crafting, and a handful of arrows. Given the situation, I should focus on creating a distraction to lure the zombies away from me, rather than trying to fight them head-on."
+  },
+  {
+    "instruction": "I'm trapped in a cave with zombies and only have 3 hearts left, what should I do?",
+    "input": "",
+    "output": "Grab a nearby water bucket and fill it with lava from the cave's surface. Pour the lava into your helmet to create a makeshift lava bucket. Move quickly through the cave, pouring lava on zombies behind you to block their path while avoiding direct exposure yourself. Once you've cleared a path, find a safe place to rest and replenish your health with a potion of healing.",
+    "source": "minecraft_wiki_Mechanics_Hopper",
+    "conversation_type": "survival_scenarios",
+    "thinking": "First, prioritize survival over finding resources. With limited health, movement speed is crucial to escape the zombies. Use any speed-boosting items or enchantments available. Next, examine my current inventory to see if there are any useful resources that can aid in immediate survival, such as health-restoring potions, food, or armor."
+  }
+]

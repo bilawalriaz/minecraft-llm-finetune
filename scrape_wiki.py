@@ -226,6 +226,139 @@ def scrape_category(category_name, max_pages=2000, existing_data=None):
     
     return articles
 
+# Function to scrape special pages that don't have category pages
+def scrape_special_pages(category_name, existing_data=None):
+    print(f"Scraping special category: {category_name}")
+    
+    # Initialize existing URLs set to avoid duplicates
+    existing_urls = set()
+    if existing_data:
+        for article in existing_data:
+            existing_urls.add(article['url'])
+        print(f"  Found {len(existing_urls)} existing articles to skip")
+    
+    # Define direct URLs for special categories
+    special_pages = {
+        "Brewing": [
+            {"title": "Brewing", "url": "https://minecraft.fandom.com/wiki/Brewing"},
+            {"title": "Brewing Stand", "url": "https://minecraft.fandom.com/wiki/Brewing_Stand"},
+            {"title": "Potion", "url": "https://minecraft.fandom.com/wiki/Potion"},
+            {"title": "Splash Potion", "url": "https://minecraft.fandom.com/wiki/Splash_Potion"},
+            {"title": "Lingering Potion", "url": "https://minecraft.fandom.com/wiki/Lingering_Potion"},
+            {"title": "Cauldron", "url": "https://minecraft.fandom.com/wiki/Cauldron"},
+            {"title": "Fermented Spider Eye", "url": "https://minecraft.fandom.com/wiki/Fermented_Spider_Eye"},
+            {"title": "Blaze Powder", "url": "https://minecraft.fandom.com/wiki/Blaze_Powder"},
+            {"title": "Nether Wart", "url": "https://minecraft.fandom.com/wiki/Nether_Wart"},
+            {"title": "Glistering Melon", "url": "https://minecraft.fandom.com/wiki/Glistering_Melon"},
+            {"title": "Brewing recipes", "url": "https://minecraft.fandom.com/wiki/Brewing/Recipes"}
+        ],
+        "Crafting": [
+            {"title": "Crafting", "url": "https://minecraft.fandom.com/wiki/Crafting"},
+            {"title": "Crafting Table", "url": "https://minecraft.fandom.com/wiki/Crafting_Table"},
+            {"title": "Recipe", "url": "https://minecraft.fandom.com/wiki/Recipe"},
+            {"title": "Recipe Book", "url": "https://minecraft.fandom.com/wiki/Recipe_Book"},
+            {"title": "Crafting recipes", "url": "https://minecraft.fandom.com/wiki/Crafting/Recipes"},
+            {"title": "Crafting/Complete list", "url": "https://minecraft.fandom.com/wiki/Crafting/Complete_list"}
+        ]
+    }
+    
+    # Get the list of pages for this category
+    article_links = []
+    if category_name in special_pages:
+        for page in special_pages[category_name]:
+            if page["url"] not in existing_urls:
+                article_links.append(page)
+    else:
+        print(f"  No special handling defined for category: {category_name}")
+        return existing_data or []
+    
+    # If no new articles to scrape, return existing data
+    if not article_links and existing_data:
+        print(f"  No new articles to scrape for {category_name}")
+        return existing_data
+    
+    # Scrape each article
+    articles = existing_data or []
+    save_counter = 0
+    save_frequency = 5  # Save after every 5 articles
+    
+    print(f"  Found {len(article_links)} new articles to scrape")
+    
+    # Use tqdm for progress monitoring
+    for i, article in enumerate(tqdm(article_links, desc=f"  Scraping {category_name}", unit="article")):
+        try:
+            article_response = requests.get(article['url'])
+            article_soup = BeautifulSoup(article_response.content, 'html.parser')
+            
+            # Get main content - updated selector for the new wiki structure
+            content = article_soup.select_one('.mw-parser-output')
+            if content:
+                # Remove navigation elements
+                for nav in content.select('.navbox, .toc, .infobox, .wikitable, .mw-editsection, .mw-headline'):
+                    nav.decompose()
+                
+                # Improve paragraph handling by adding explicit newlines
+                for p in content.find_all('p'):
+                    # Add newlines after paragraphs to preserve structure
+                    if p.next_sibling:
+                        p.append('\n\n')
+                
+                # Handle lists better
+                for ul in content.find_all(['ul', 'ol']):
+                    # Add newlines before and after lists
+                    if ul.previous_sibling:
+                        ul.insert_before('\n')
+                    if ul.next_sibling:
+                        ul.append('\n')
+                    
+                    # Add newlines after list items
+                    for li in ul.find_all('li'):
+                        if li.next_sibling:
+                            li.append('\n')
+                
+                # Handle headings better
+                for heading in content.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']):
+                    # Add newlines before and after headings
+                    if heading.previous_sibling:
+                        heading.insert_before('\n\n')
+                    if heading.next_sibling:
+                        heading.append('\n\n')
+                
+                # Extract text
+                text = content.get_text(separator=' ')
+                
+                # Clean the text content
+                cleaned_text = clean_text(text)
+                
+                articles.append({
+                    'title': article['title'],
+                    'url': article['url'],
+                    'content': cleaned_text,
+                    'category': category_name
+                })
+                
+                # Increment save counter
+                save_counter += 1
+                
+                # Save progress incrementally
+                if save_counter >= save_frequency:
+                    save_data(articles, category_name)
+                    save_counter = 0
+            
+            # Avoid overloading the server
+            time.sleep(0.25)
+        except Exception as e:
+            tqdm.write(f"Error scraping {article['title']}: {e}")
+            # Save on error to preserve progress
+            save_data(articles, category_name)
+    
+    # Final save for this category
+    save_data(articles, category_name)
+    print(f"  Completed scraping {len(article_links)} new articles for {category_name}")
+    print(f"  Total articles for {category_name}: {len(articles)}")
+    
+    return articles
+
 # Function to clean existing data
 def clean_existing_data(data):
     if not data:
@@ -245,8 +378,12 @@ def clean_existing_data(data):
 
 # Main scraping function
 def build_minecraft_dataset():
-    # Categories to scrape
+    # Categories to scrape - include all categories
     categories = ["Blocks", "Items", "Brewing", "Mechanics", "Mobs", "Crafting"]
+    
+    # Special categories that need direct page scraping instead of category pages
+    special_categories = ["Brewing", "Crafting"]
+    
     all_data = {}
     
     # Create directory
@@ -271,17 +408,91 @@ def build_minecraft_dataset():
                 tqdm.write(f"  Error loading existing data for {category}, starting fresh")
         
         # Scrape category with existing data to avoid duplicates
-        articles = scrape_category(category, existing_data=existing_data)
-        all_data[category] = articles
-        
-        # Final save for this category (already done in scrape_category)
-        tqdm.write(f"  Completed {len(articles)} total articles for {category}")
+        try:
+            if category in special_categories:
+                articles = scrape_special_pages(category, existing_data=existing_data)
+            else:
+                articles = scrape_category(category, existing_data=existing_data)
+            
+            all_data[category] = articles
+            
+            # Final save for this category (already done in scrape_category)
+            tqdm.write(f"  Completed {len(articles)} total articles for {category}")
+        except Exception as e:
+            tqdm.write(f"Error processing category {category}: {e}")
+            # If we have existing data, use that
+            if existing_data:
+                all_data[category] = existing_data
+                tqdm.write(f"  Using {len(existing_data)} existing articles for {category}")
+            else:
+                tqdm.write(f"  No data available for {category}")
     
     # Save combined data (mark as final)
     save_data([], "", is_final=True)
     
-    print("\nData scraping complete!")
+    # Count total articles
+    total_articles = sum(len(articles) for articles in all_data.values())
+    print(f"\nData scraping complete! Total articles: {total_articles}")
+
+
+def remove_minecraft_earth():
+    # Path to the JSON file
+    input_file = "raw_data/all_minecraft_data.json"
+    backup_file = "raw_data/all_minecraft_data_backup.json"
+    output_file = "raw_data/all_minecraft_data.json"
+
+    print(f"Loading JSON data from {input_file}...")
+    with open(input_file, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+
+    # Create a backup of the original file
+    print(f"Creating backup at {backup_file}...")
+    with open(backup_file, 'w', encoding='utf-8') as f:
+        json.dump(data, f)
+        
+    print(f"Backup created successfully.")
+
+    # Count total objects and objects to be removed
+    total_objects = sum(len(category_items) for category_items in data.values())
+    objects_to_remove = 0
+    print(f"Found {total_objects} total objects across {len(data)} categories.")
+
+    # Filter out objects with content starting with the specified string
+    filtered_data = {}
+    removed_by_category = {}
+
+    for category, items in tqdm(data.items(), desc="Processing categories"):
+        filtered_items = []
+        category_removed = 0
+        
+        for item in items:
+            content = item.get("content", "")
+            if not content.startswith("Minecraft Earth was discontinued due to outdoor restrictions"):
+                filtered_items.append(item)
+            else:
+                objects_to_remove += 1
+                category_removed += 1
+        
+        filtered_data[category] = filtered_items
+        removed_by_category[category] = category_removed
+
+    # Save the filtered data
+    print(f"Saving filtered data to {output_file}...")
+    with open(output_file, 'w', encoding='utf-8') as f:
+        json.dump(filtered_data, f)
+
+    print(f"\nRemoved {objects_to_remove} objects out of {total_objects} total objects.")
+
+    # Print breakdown by category
+    print("\nBreakdown of removed objects by category:")
+    for category, count in removed_by_category.items():
+        if count > 0:
+            print(f"  - {category}: {count} objects removed")
+
+    print(f"\nFiltered data saved to {output_file}")
+
 
 # Run the scraper
 if __name__ == "__main__":
     build_minecraft_dataset()
+    remove_minecraft_earth()
